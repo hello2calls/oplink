@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Oplink::Application.config.secret_token = '9f348124856b3ac7d8cd66a118795eefadc565a5b8a494dfdfe791664879c93f78d87f448989b90c263ee406853ab4314eeb471c63d495b25e65f8ce600f10ea'
+OplinkManagement::Application.config.secret_token = '8608e5356e9b8c127566159674f83613d825c5c2935f33ff77e80c8764975736b786db93aea6621c6b0ceae9454fa5243d2ea74dada48286578a72e982c18b2e'
