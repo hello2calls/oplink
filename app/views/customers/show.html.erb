@@ -1,0 +1,47 @@
+
+<table class="table table-striped table-bordered table-condensed">
+  <tbody>
+  <tr>
+    <td class="top"><b>Status:</b> <%= @customer.status %></td>
+  </tr>
+  <tr>
+    <td class="top"><b>Phone:</b> <%= @customer.phone %></td>
+  </tr>
+  <tr>
+    <td class="top"><b>Opu:</b> <%= @customer.opu_sn %></td>
+  </tr>
+  <tr>
+    <td class="top"><b>Activation Date:</b>: <%= @customer.activation_date %></td>
+  </tr>
+  <tr>
+    <td class="top"><b>Expiration Date:</b>: <%= @customer.expiration_date %></td>
+  </tr>
+  <tr>
+    <td class="top"><b>First Name:</b>: <%= @customer.first %></td>
+  </tr>
+  <tr>
+    <td class="top"><b>Last Name:</b> <%= @customer.last %></td>
+  </tr>
+  <tr>
+    <td class="top"><b>City:</b> <%= @customer.city %></td>
+  </tr>
+  <tr>
+    <td class="top"><b>Country:</b> <%= @customer.country %></td>
+  </tr>
+  <tr>
+    <td class="top"><b>Email:</b> <%= @customer.email %></td>
+  </tr>
+  <tr>
+    <td class="top"><b>Address:</b> <%= @customer.address %></td>
+  </tr>
+  <tr>
+    <td class="top"><b>Balance:</b> <%= @customer.balance %></td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="form-actions">
+<%= link_to "Back", customers_path, :class => 'btn'  %>
+<%= link_to "Edit", edit_customer_path(@customer), :class => 'btn' %>
+<%= link_to "Delete", customer_path(@customer), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :class => 'btn' %>
+</div>

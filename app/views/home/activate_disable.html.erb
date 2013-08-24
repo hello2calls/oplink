@@ -1,12 +1,14 @@
 <%= form_tag(:action => "after_activate") do %>
+    <br>
+    <%= label_tag "Customer ID" %>
+    <%= number_field_tag 'id', @customer.id, :disabled=>true %><br>
     <%= label_tag "Method" %>
-    <%= select_tag('method', options_for_select([['Activate', 1], ['Disable', 0]]))%><br>
+    <%= select_tag('method', options_for_select(['Activate', 1]))%><br>
     <%= label_tag "Authorization header: "%>
     <%= text_field_tag 'auth', session[:auth] %><br>
-    <%= label_tag ("Phone number") %><br>
-    <%= text_area_tag 'phone', session[:phone] %><br>
-    <%= label_tag ("OPU Number(SN)") %><br>
-    <%= text_area_tag 'opu', session[:opu] %><br>
-    <%#= recaptcha_tags %>
+    <%= label_tag ("Phone number") %>
+    <%= text_field_tag 'phone', session[:phone] %><br>
+    <%= label_tag ("OPU Number(SN)") %>
+    <%= text_field_tag 'opu', session[:opu] %><br>
     <%= submit_tag "Submit", :class => "common_btn", :id => "contact_submit_btn" %>
 <% end %>

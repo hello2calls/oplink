@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require twitter/bootstrap
  *= require_tree .
  */
 body {
@@ -18,7 +19,11 @@ body {
 	font-size: 16px;
 	line-height: 1.5em;
 }
-
+.navbar-inner {
+	height:35px;
+	font-size:20px;
+	text-decoration:underline;
+}
 input {
 	font-family: inherit;
 	font-size: inherit;
@@ -101,16 +106,17 @@ table {
 	border-collapse: collapse;
 	margin-top: 10px;
 	text-align: center;
+	background-size: 200px;
 }
 th {
-	font-size: 1.0rem;
+	font-size: 1.5rem;
 	font-weight: 300;
+	text-decoration: underline;
 }
 th, td {
 	padding:5px;
 	text-align: left;
-	color:red;
-	background-color:aqua;
+	background-color:#CCFFFF;
 }
 table, th, td {
 	border: 1px solid black;
@@ -136,4 +142,16 @@ table, th, td {
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: -10px;
+}
+
+footer {
+	height: 40px;
+	width: 800px;
+	margin-top: 10px;
+	font-size: 0.7rem; 
+	padding-top: 2px;
+
+	li {
+		list-style-type: none;
+	}
 }

@@ -1,0 +1,16 @@
+
+<table class="table table-striped table-bordered table-condensed">
+  <tbody>
+  <tr>
+    <td><b>Amount:</b> <%= @payment.amount %></td>
+  </tr>
+  <tr>
+    <td><b>Date:</b> <%= @payment.date %></td>
+  </tr>
+  </tbody>
+</table>
+<div class="form-actions">
+<%= link_to "Back", payments_path, :class => 'btn'  %>
+<%= link_to "Edit", edit_payment_path(@payment), :class => 'btn' %>
+<%= link_to "Delete", payment_path(@payment), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :class => 'btn' %>
+</div>
