@@ -1,9 +1,12 @@
+require 'rufus/scheduler'
 class PaymentsController < ApplicationController
   before_filter :authenticate_user!
+  SCHEDULER = Rufus::Scheduler.start_new
   # GET /payments
   # GET /payments.json
+  helper_method :sort_column, :sort_direction
   def index
-    @payments = Payment.all
+    @payments = Payment.order(sort_column + ' ' + sort_direction)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -41,7 +44,41 @@ class PaymentsController < ApplicationController
   # POST /payments.json
   def create
     @payment = Payment.new(params[:payment])
+    @opu = Opu.find(@payment.opu_id)
+    @payment.opu_sn = @opu.sn
     @customer = Customer.find(@payment.customer_id)
+    #code for making sure the activation request went through
+    savon_client = Savon::Client.new("http://c4miws.elasticbeanstalk.com/services/C4miForCiaoWebServiceImpl?wsdl")
+    session[:auth] = "C4miforciao2013"
+    session[:phone] = @customer.phone
+    session[:opu] = @payment.opu_sn
+    #@response = savon_client.request :web, :activate, body: {auth: "C4miforciao2013", phoneNum: "2434325434534", opuSn: "10110000C83A3531D808", enableService: "1"}
+    @response = savon_client.request :web, :activate, body: {auth: session[:auth], phoneNum: session[:phone], opuSn: session[:opu], enableService: "1"}
+    @message = ActiveSupport::JSON.decode(@response.to_hash[:activate_response][:activate_return].gsub(/:([a-zA-z])/,'\\1'))
+    if @message["success"] == "true" and @payment.errors.eql?(nil)
+      @customer.status = "Active"
+      @opu.status = "Active"
+      @opu.activation_date = Time.now
+      @opu.expiration_date = Time.now + 1.month
+      @opu.save
+      #set the expiration date to be one month from now
+      SCHEDULER.at('#{Time.now + 1.month}') do
+        @response2= savon_client.request :web, :deactivate, body: {auth: session[:auth], phoneNum: session[:phone], opuSn: session[:opu], enableService: "0"}
+        @message2 = ActieSupport::JSON.decode(@response2.to_hash[:deactivate_response][:deactivate_return].gsub(/:([a-zA-z])/,'\\1'))
+        if @message2["success"] == "true"
+            @customer.status = "Not Active"
+        else
+          flash[:alert] = "Could not deactivate customer, #{@message['message']}"
+        end
+        #TO DO
+        #email if the deactivation is not successful
+      end
+      @customer.save
+      flash[:notice] = "Activation successful!"
+    elsif @message["success"] == "false"
+      flash[:alert] = "Could not activate, #{@message['message']}"
+    end
+
     @customer.expiration_date = Time.now + 1.months
     respond_to do |format|
       if @payment.save
@@ -80,5 +117,14 @@ class PaymentsController < ApplicationController
       format.html { redirect_to payments_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+  def sort_column
+    Payment.column_names.include?(params[:sort]) ? params[:sort] : "date"
+  end
+  
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ?  params[:direction] : "asc"
   end
 end

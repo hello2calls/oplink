@@ -1,5 +1,12 @@
 Welcome to Ciao Oplink management portal!
-<br>
+<br><br>
+<%= form_tag :action => "showCustomer" do %>
+  <%= label_tag "Search Customer" %>
+  <%= select(:search, :value, HomeController::SEARCH_OPTIONS.collect {|d| [d, HomeController::SEARCH_OPTIONS.index(d) + 1]}, {:include_blank => true}) %><br>
+  <%= text_field_tag "input" %>
+  <%= submit_tag 'Search', :class => "btn"%>
+<% end %>
+
 <div id="slider" class="nivoSlider">
     <%= image_tag("oplink.png") %>
     <%= image_tag("ciao.jpg") %>

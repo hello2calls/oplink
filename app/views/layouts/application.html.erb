@@ -21,8 +21,10 @@
           <ul class="nav">
             <%= link_to 'Home', "/home/index", :class => 'navbar-link' %> |
             <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-            <%= link_to "View Customers", "/customers/" %> |
-            <%= link_to "View Payments", "/payments/" %>
+            <%= link_to "View Customers", "/customers/", :class => 'navbar-link' %> |
+            <%= link_to "View Payments", "/payments/", :class => 'navbar-link' %> |
+            <%= link_to "View Opus", "/opus/", :class => 'navbar-link' %> |
+            <%= link_to "Get Opu Info", "/home/getOpuInfo", :class => 'navbar-link' %>
           </ul>
         </div>
       </div>
@@ -31,11 +33,11 @@
   
   <div class="status">
   You are Logged in as <strong><%= current_user.email %></strong>.
-    <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
  </div>
 <% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+  <%= link_to "Sign up", new_user_registration_path  %> |
+  <%= link_to "Login", new_user_session_path %>
 <% end %>
 <% if notice %>
   <p class="notice"><%= notice %></p>

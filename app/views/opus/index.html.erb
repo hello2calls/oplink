@@ -1,0 +1,30 @@
+<h1>Opus</h1>
+<table class="table table-striped">
+ <thead>
+  <tr>
+    <th>Serial Number</th>
+    <th>ID</th>
+    <th>Customer</th>
+    <th>Created at</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @opus.each do |opu| -%>
+   <tr>
+    <td><%= opu.sn %></td>
+    <td><%= opu.id %></td>
+    <% customer = Customer.find(opu.customer_id) %>
+    <td><%= customer.first + " " + customer.last %></td>
+    <td><%= opu.created_at %></td>
+    <td>
+      <%= link_to "Details", opu_path(opu) %> |
+      <%= link_to "Edit", edit_opu_path(opu) %> |
+      <%= link_to "Destroy", opu_path(opu), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+    </td>
+    </tr>
+    <% end -%>
+   </tbody>
+</table>
+
+<%= link_to "New", new_opu_path, :class => 'btn btn-primary' %>

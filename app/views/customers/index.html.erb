@@ -17,6 +17,8 @@
     <td><%= customer.status %></td>
     <td><%= customer.created_at %></td>
     <td>
+      <%= link_to "Add OPU", :id => customer.id, :controller => "opus", :action => "new" %> |
+      <%= link_to "Add payment", :id => customer.id, :controller => "payments", :action => "new", :class => 'btn' %> |
       <%= link_to "View payments", :id => customer.id, :action => 'payment_history' %> |
       <%= link_to "Details", customer_path(customer) %> |
       <%= link_to "Edit", edit_customer_path(customer) %> |

@@ -2,8 +2,9 @@
 
 <table>
   <tr>
-    <th>Amount</th>
-    <th>Date</th>
+    <th><%= sortable 'amount' %></th>
+    <th><%= sortable 'date' %></th>
+    <th><%= sortable 'opu_sn' %></th>
     <th>Customer</th>
     <th></th>
     <th></th>
@@ -14,6 +15,7 @@
   <tr>
     <td><%= payment.amount %></td>
     <td><%= payment.date %></td>
+    <td><%= payment.opu_sn %></td>
     <td><%= Customer.find(payment.customer_id).first + " " + Customer.find(payment.customer_id).last rescue nil%></td>
     <td><%= link_to 'Details', payment %></td>
     <td><%= link_to 'Edit', edit_payment_path(payment) %></td>

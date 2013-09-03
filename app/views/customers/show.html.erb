@@ -8,9 +8,6 @@
     <td class="top"><b>Phone:</b> <%= @customer.phone %></td>
   </tr>
   <tr>
-    <td class="top"><b>Opu:</b> <%= @customer.opu_sn %></td>
-  </tr>
-  <tr>
     <td class="top"><b>Activation Date:</b>: <%= @customer.activation_date %></td>
   </tr>
   <tr>
@@ -41,6 +38,8 @@
 </table>
 
 <div class="form-actions">
+<%= link_to "Add OPU", :id => @customer.id, :controller => "opus", :action => "new" %> |
+<%= link_to "Add payment", :id => @customer.id, :controller => "payments", :action => "new", :class => 'btn' %> |
 <%= link_to "Back", customers_path, :class => 'btn'  %>
 <%= link_to "Edit", edit_customer_path(@customer), :class => 'btn' %>
 <%= link_to "Delete", customer_path(@customer), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :class => 'btn' %>

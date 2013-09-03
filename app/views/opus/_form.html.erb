@@ -1,0 +1,29 @@
+<div class="clearfix">
+  <% if params[:id] %>
+	<%= f.select('customer_id', [[Customer.find(params[:id].to_i).first + " " + Customer.find(params[:id].to_i).last, Customer.find(params[:id].to_i).id.to_s]])%>
+  <% else %>
+	<%= f.select('customer_id', Customer.all.collect {|a| [a.first + " " + a.last, a.id]})%>
+  <% end %>
+</div>
+
+<div class="clearfix">
+   <%= f.label :sn %><br/>
+   <%= f.text_field :sn, :class => 'text_field' %>
+</div>
+
+<div class="clearfix">
+   <%= f.label :activation_date %><br/>
+   <%= f.datetime_select :activation_date, :class => 'datetime_select', :disabled => true %>
+</div>
+
+<div class="clearfix">
+   <%= f.label :expiration_date %><br/>
+   <%= f.datetime_select :expiration_date, :class => 'datetime_select', :disabled => true %>
+</div>
+<div class="clearfix">
+   <%= f.label :status %><br/>
+   <%= f.text_field :status, :value => "Not Active" %>
+</div>
+<div class="actions">
+  <%= f.submit %>
+</div>
