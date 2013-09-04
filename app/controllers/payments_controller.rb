@@ -79,7 +79,6 @@ class PaymentsController < ApplicationController
       flash[:alert] = "Could not activate, #{@message['message']}"
     end
 
-    @customer.expiration_date = Time.now + 1.months
     respond_to do |format|
       if @payment.save
         format.html { redirect_to @payment, notice: 'Payment was successfully created.' }

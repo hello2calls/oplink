@@ -1,6 +1,8 @@
-OplinkManagement::Application.routes.draw do 
+OplinkManagement::Application.routes.draw do
+  get "csnCustomers/addPayment" 
+  get "csnCustomers/addCustomer" 
+  get "csnCustomers/getCustomer"
   resources :opus
-
 
   resources :payments
 

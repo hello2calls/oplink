@@ -9,7 +9,7 @@ gem 'sqlite3'
 
 gem 'devise'
 gem 'nokogiri'
-
+gem 'actionwebservice'
 #for working with soap api
 gem 'savon', '=1.2.0'
 # Gems used only for assets and not required

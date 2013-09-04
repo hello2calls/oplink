@@ -14,6 +14,10 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
+    actionwebservice (0.6.0)
+      actionpack (>= 1.5.1)
+      activerecord (>= 1.8.0)
+      activesupport (>= 1.0.1)
     activemodel (3.2.14)
       activesupport (= 3.2.14)
       builder (~> 3.0.0)
@@ -151,6 +155,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionwebservice
   coffee-rails (~> 3.2.1)
   devise
   jquery-rails

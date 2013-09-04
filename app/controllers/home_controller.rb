@@ -98,14 +98,11 @@ class HomeController < ApplicationController
 			  	end
 
 			  end
-			  #notify success via email
-			  puts "HEREEEEEE"
 			  begin 
 				Mail.deliver do
 				   	to 'aldizhupani@gmail.com'
 			   		from "#{from}"
 			   		subject "#{subject}"
-			   		#body "hi"
 			   		body "Activation successful"
 				end
 
