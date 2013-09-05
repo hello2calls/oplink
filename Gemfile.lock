@@ -79,6 +79,7 @@ GEM
     mime-types (1.24)
     mini_portile (0.5.1)
     multi_json (1.7.9)
+    mysql2 (0.3.13)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     nori (1.1.5)
@@ -159,6 +160,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   jquery-rails
+  mysql2
   nokogiri
   rails (= 3.2.14)
   rufus-scheduler (= 2.0.7)

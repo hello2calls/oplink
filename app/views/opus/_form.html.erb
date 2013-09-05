@@ -1,8 +1,8 @@
 <div class="clearfix">
-  <% if params[:id] %>
-	<%= f.select('customer_id', [[Customer.find(params[:id].to_i).first + " " + Customer.find(params[:id].to_i).last, Customer.find(params[:id].to_i).id.to_s]])%>
+  <% if params[:c_id] %>
+	<%= f.select(:customer_id, [[Customer.find(params[:c_id].to_i).first + " " + Customer.find(params[:c_id].to_i).last, Customer.find(params[:c_id].to_i).id.to_s]])%>
   <% else %>
-	<%= f.select('customer_id', Customer.all.collect {|a| [a.first + " " + a.last, a.id]})%>
+	<%= f.select(:customer_id, Customer.all.collect {|a| [a.first + " " + a.last, a.id]})%>
   <% end %>
 </div>
 

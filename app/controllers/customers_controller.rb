@@ -46,7 +46,8 @@ class CustomersController < ApplicationController
   # POST /customers.json
   def create
     @customer = Customer.new(params[:customer])
-
+    @customer.status = "Not active"
+    @customer.balance = 0.0
     respond_to do |format|
       if @customer.save
         format.html { redirect_to @customer, notice: 'Customer was successfully created.' }

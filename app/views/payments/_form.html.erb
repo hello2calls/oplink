@@ -12,8 +12,8 @@
   <% end %>
   <div class="field">
     <%= f.label :customer_id %><br />
-    <% if params[:id] %>
-      <%= f.select('customer_id', [[Customer.find(params[:id].to_i).first + " " + Customer.find(params[:id].to_i).last, Customer.find(params[:id].to_i).id]])%>
+    <% if params[:c_id] %>
+      <%= f.select('customer_id', [[Customer.find(params[:c_id].to_i).first + " " + Customer.find(params[:c_id].to_i).last, Customer.find(params[:c_id].to_i).id]])%>
     <% else %>
       <%= f.select('customer_id', Customer.all.collect {|a| [a.first + " " + a.last, a.id]})%>
     <% end %>

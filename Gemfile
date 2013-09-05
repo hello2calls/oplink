@@ -5,7 +5,12 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'rufus-scheduler', '2.0.7'
-gem 'sqlite3'
+group :development, :production do 
+	gem 'mysql2'
+end
+group :test do
+	gem 'sqlite3'
+end
 
 gem 'devise'
 gem 'nokogiri'

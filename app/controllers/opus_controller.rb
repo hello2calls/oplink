@@ -24,7 +24,6 @@ class OpusController < ApplicationController
   # GET /opus/new.json
   def new
     @opu = Opu.new
-    @opu.customer_id = params[:customer_id]
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @opu }
@@ -40,7 +39,6 @@ class OpusController < ApplicationController
   # POST /opus.json
   def create
     @opu = Opu.new(params[:opu])
-
     respond_to do |format|
       if @opu.save
         format.html { redirect_to @opu, notice: 'Opu was successfully created.' }
