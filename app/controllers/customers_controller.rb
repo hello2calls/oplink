@@ -15,7 +15,11 @@ class CustomersController < ApplicationController
   # GET /customers/1.json
   def show
     @customer = Customer.find(params[:id])
-
+    @opu_names = []
+    @opus = Opu.where(:customer_id => @customer.id)
+    @opus.each do |opu|
+      @opu_names.push(opu.sn)
+    end
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @customer }
@@ -39,7 +43,8 @@ class CustomersController < ApplicationController
   end
 
   def payment_history
-    @payments = Customer.find(params[:id]).payments
+    @customer = Customer.find(params[:id])
+    @payments = Payment.where(:customer_id => @customer.id)
   end
 
   # POST /customers

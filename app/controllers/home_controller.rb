@@ -66,20 +66,21 @@ class HomeController < ApplicationController
 		#puts savon_client.wsdl.soap_actions
 		session[:auth] = "C4miforciao2013"
 		session[:phone] = @customer.phone
-		session[:opu] = "13110000C83A351FB380"
+		session[:opu] = params[:opu]
 		session[:action] = params[:method]
+		@opu = Opu.find_by_sn(session[:opu])
 		#@response = savon_client.request :web, :get_owner_opu_info_by_opu_sn, body: {auth: "C4miforciao2013", phoneNum: "2434325434534", opuSn: "10110000C83A3531D808"}
 		@response = savon_client.request :web, :activate, body: {auth: session[:auth], phoneNum: session[:phone], opuSn: session[:opu], enableService: session[:action]}
 		@message = ActiveSupport::JSON.decode(@response.to_hash[:activate_response][:activate_return].gsub(/:([a-zA-z])/,'\\1'))
 		if @message["success"] == "true"
 			if params[:method] == "1"
-			  @customer.status = "Active"
 			  #set the expiration date to be one month from now
 			  SCHEDULER.at('#{Time.now + 1.month}') do
-			  	@response2= savon_client.request :web, :deactivate, body: {auth: session[:auth], phoneNum: session[:phone], opuSn: session[:opu], enableService: "0"}
-				@message2 = ActiveSupport::JSON.decode(@response2.to_hash[:deactivate_response][:deactivate_return].gsub(/:([a-zA-z])/,'\\1'))
+			  	@response2= savon_client.request :web, :activate, body: {auth: session[:auth], phoneNum: session[:phone], opuSn: session[:opu], enableService: "0"}
+				@message2 = ActiveSupport::JSON.decode(@response2.to_hash[:activate_response][:activate_return].gsub(/:([a-zA-z])/,'\\1'))
 				if @message2["success"] == "true"
-			  		@customer.status = "Not Active"
+			  		@opu.status = "Not Active"
+			  		@opu.save
 			  		#notify deactivation success via email
 				  	begin 
 						Mail.deliver do
@@ -109,14 +110,17 @@ class HomeController < ApplicationController
 			  rescue Exception => e
 			 	flash[:error] = "You message was not sent! Please try again!"
 	    	  end
+	    	  @opu.status = "Active"
+			  @opu.save
 			  #@customer = Customer.create(:phone => params[:phone], :opu_sn => params[:opu], :activation_date => Time.now, :expiration_date => (Time.now + 1.month.from_now), :status => "active", :first => params[:first], :last => params[:last], :city => params[:city], :country => params[:country], :email => params[:email], :address => params[:address], :balance => 0.0)
 			  #Payment.new(:refill_amount => params[:amount], :refill_time => Time.now(), customer_id => Customer.find(@customer.id))   
 			  flash[:notice] = "Activation successful!"
 			elsif params[:method] == "0"
-			  @response3= savon_client.request :web, :deactivate, body: {auth: session[:auth], phoneNum: session[:phone], opuSn: session[:opu], enableService: "0"}
-			  @message3 = ActiveSupport::JSON.decode(@response2.to_hash[:deactivate_response][:deactivate_return].gsub(/:([a-zA-z])/,'\\1'))
+			  @response3= savon_client.request :web, :activate, body: {auth: session[:auth], phoneNum: session[:phone], opuSn: session[:opu], enableService: "0"}
+			  @message3 = ActiveSupport::JSON.decode(@response3.to_hash[:activate_response][:activate_return].gsub(/:([a-zA-z])/,'\\1'))
 			  if @message3["success"] == "true"
-			    @customer.status = "Not Active"
+			    @opu.status = "Not Active"
+			  	@opu.save
 			    flash[:alert] = "Customer no longer active!"
 			    redirect_to "/opus/"
 			  else
@@ -124,8 +128,7 @@ class HomeController < ApplicationController
 			    redirect_to "/opus/"
 			  end
 			end
-			@customer.save
-			redirect_to "/customers/"
+			setStatus(@customer)
 	    elsif @message["success"] == "false"
 			flash[:alert] = "Could not complete the request, #{@message['message']}"
 			redirect_to "/home/index"
@@ -168,7 +171,7 @@ class HomeController < ApplicationController
     	if customer
     		redirect_to customer_path(customer)
     	else
-    		flash[:alert] = "Sorry, couldn't find user!"
+    		flash[:alert] = "Sorry, couldn't find this customer!"
     		redirect_to "/home/index"
     	end
     end
@@ -188,10 +191,30 @@ class HomeController < ApplicationController
     	end
     	#params = {:customer_id => @customer.id, :opu_sn => "13110000C83A351FB380"}
 		#puts Payment.find(:all, :conditions => ["customer_id LIKE :customer_id AND opu_sn = :opu_sn", params])
-		@opus_for_this_customer = Opu.where(:customer_id => @customer.id)
-    	@temp = Payment.where(:customer_id => @customer.id)
-    	puts @temp.where(:opu_sn => @opus_for_this_customer.first).inspect
-    	return @customer
+		if @customer
+			@opus_for_this_customer = Opu.where(:customer_id => @customer.id)
+	    	@temp = Payment.where(:customer_id => @customer.id)
+	    	return @customer
+	    end
+    end
+
+    def setStatus(customer)
+    	opus = Opu.all
+    	act = false
+    	opus.each do |opu|
+    	  if opu.status == "Active"
+    	  	act = true
+    	  	break
+    	  else
+    	  	act = false
+    	  end
+    	end
+    	if act == true
+    		customer.status = "Active"
+    	else
+    		customer.status = "Not Active"
+    	end
+    	customer.save
     end
 end
 

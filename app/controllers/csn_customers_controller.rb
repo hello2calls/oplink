@@ -23,7 +23,7 @@ class CsnCustomersController < ApplicationController
   def addPayment
     if params[:token]
       if params[:token] == "uewyiyutywegfysdvcj"
-        customer = Customer.find(params[:user_id])
+        customer = Customer.find(params[:user_id]) rescue nil
         if customer
             payment = Payment.new()
             payment.customer_id = params[:user_id].to_i
@@ -40,26 +40,30 @@ class CsnCustomersController < ApplicationController
               #@response = savon_client.request :web, :activate, body: {auth: "C4miforciao2013", phoneNum: "2434325434534", opuSn: "10110000C83A3531D808", enableService: "1"}
               @response = savon_client.request :web, :activate, body: {auth: session[:auth], phoneNum: session[:phone], opuSn: session[:opu], enableService: "1"}
               @message = ActiveSupport::JSON.decode(@response.to_hash[:activate_response][:activate_return].gsub(/:([a-zA-z])/,'\\1'))
-              if @message["success"] == "true" and payment.errors.eql?(nil)
-                customer.status = "Active"
-                opu.status = "Active"
-                opu.activation_date = Time.now
-                opu.expiration_date = Time.now + 1.month
-                opu.save
-                #set the expiration date to be one month from now
-                SCHEDULER.at('#{Time.now + 1.month}') do
-                  @response2= savon_client.request :web, :deactivate, body: {auth: session[:auth], phoneNum: session[:phone], opuSn: session[:opu], enableService: "0"}
-                  @message2 = ActieSupport::JSON.decode(@response2.to_hash[:deactivate_response][:deactivate_return].gsub(/:([a-zA-z])/,'\\1'))
-                  if @message2["success"] == "true"
-                      customer.status = "Not Active"
-                  else
-                    flash[:alert] = "Could not deactivate customer, #{@message['message']}"
+              if @message["success"] == "true"
+                if payment.save
+                  customer.status = "Active"
+                  opu.status = "Active"
+                  opu.activation_date = Time.now
+                  opu.expiration_date = Time.now + 1.month
+                  opu.save
+                  #set the expiration date to be one month from now
+                  SCHEDULER.at('#{Time.now + 1.month}') do
+                    @response2= savon_client.request :web, :deactivate, body: {auth: session[:auth], phoneNum: session[:phone], opuSn: session[:opu], enableService: "0"}
+                    @message2 = ActieSupport::JSON.decode(@response2.to_hash[:deactivate_response][:deactivate_return].gsub(/:([a-zA-z])/,'\\1'))
+                    if @message2["success"] == "true"
+                        customer.status = "Not Active"
+                    else
+                      flash[:alert] = "Could not deactivate customer, #{@message['message']}"
+                    end
+                    #TO DO
+                    #email if the deactivation is not successful
                   end
-                  #TO DO
-                  #email if the deactivation is not successful
+                  customer.save
+                  flash[:notice] = "Activation successful!"
+                else
+                  flash[:alert] = "Coul not activate the opu!"
                 end
-                customer.save
-                flash[:notice] = "Activation successful!"
               elsif @message["success"] == "false"
                 flash[:alert] = "Could not activate, #{@message['message']}"
               end
@@ -106,7 +110,7 @@ class CsnCustomersController < ApplicationController
   end
 end
 #sample addPayment request
-#http://localhost:3000/csnCustomers/addPayment?user_id=1&token=uewyiyutywegfysdvcj&amount=1.2&sn=13110000C83A351FB380
+#http://oplink.ciaocrm.com/csnCustomers/addPayment?user_id=1&token=uewyiyutywegfysdvcj&amount=1.2&sn=13110000C83A351FB380
 
 #sample addCustomer request
-#http://localhost:3000/csnCustomers/addCustomer?token=uewyiyutywegfysdvcj&phone=76756756&first=x&last=y&country=africa&email=testing@test.com
+#http://oplink.ciaocrm.com/csnCustomers/addCustomer?token=uewyiyutywegfysdvcj&phone=76756756&first=x&last=y&country=africa&email=testing@test.com

@@ -71,7 +71,9 @@ class OpusController < ApplicationController
   def destroy
     @opu = Opu.find(params[:id])
     @opu.destroy
-
+    customer = Customer.find(@opu.customer_id)
+    setStatus(customer)
+    
     respond_to do |format|
       format.html { redirect_to opus_url }
       format.json { head :no_content }
