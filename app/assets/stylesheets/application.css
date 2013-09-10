@@ -73,13 +73,15 @@ input {
 }
 
 #login h2 {
+	height:20px;
 	background-color: #f95252;
-	-webkit-border-radius: 20px 20px 0 0;
-	-moz-border-radius: 20px 20px 0 0;
-	border-radius: 20px 20px 0 0;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
 	color: #fff;
-	font-size: 28px;
-	padding: 20px 26px;
+	font-size: 20px;
+	text-align:center;
+	padding: 20px 20px;
 }
 
 #login h2 span[class*="fontawesome-"] {

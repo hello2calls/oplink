@@ -5,12 +5,13 @@ OplinkManagement::Application.routes.draw do
   resources :opus
 
   resources :payments
-
+  post "customer/payment_history"
   get "customers/payment_history"
   resources :customers
 
 
   devise_for :users#, :controllers => {:registrations => "registrations"}
+  get "home/reports"
   post "home/showCustomer"
   get "home/showCustomer"
   post "home/displayOpuInfo"

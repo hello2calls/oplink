@@ -5,7 +5,24 @@ class PaymentsController < ApplicationController
   SCHEDULER = Rufus::Scheduler.start_new
   helper_method :sort_column, :sort_direction
   def index
-    @payments = Payment.order(sort_column + ' ' + sort_direction)
+    @payments = []
+    if params['viewFrom']
+      @from_date = Time.new(params['viewFrom']['from(1i)'], params['viewFrom']['from(2i)'], params['viewFrom']['from(3i)'])
+    else
+      @from_date = Time.now - 1.days
+    end
+    if params['viewTo']
+      @to_date = Time.new(params['viewTo']['to(1i)'], params['viewTo']['to(2i)'], params['viewTo']['to(3i)'])
+    else
+      @to_date = Time.now
+    end
+    @from_date = @from_date.strftime("%Y-%m-%d") + ' 00:00:00'
+    @to_date = @to_date.strftime("%Y-%m-%d") + ' 23:59:59'
+    if params['viewFrom'] and params['viewTo']
+      @payments = ActiveRecord::Base.connection.execute("SELECT * FROM payments WHERE date between '#{@from_date}' and  '#{@to_date}'")
+    else
+      @payments = Payment.order(sort_column + ' ' + sort_direction)
+    end
 
     respond_to do |format|
       format.html # index.html.erb

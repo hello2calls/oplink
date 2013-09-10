@@ -145,6 +145,15 @@ class HomeController < ApplicationController
     	end
     end
 
+    def reports
+      @active_customers = Customer.where(:status => "Active")
+      respond_to do |format|
+      	format.html
+      	format.csv {send_data csvify(@active_customers)}
+      	format.xls {send_data csvify(@active_customers, col_sep: "\t")}
+      end
+    end
+
     private
     def findCustomer(criteria, value)
     	@customer = nil

@@ -19,6 +19,16 @@ class ApplicationController < ActionController::Base
 	customer.save
   end
 
+  def csvify(object, options={})
+  	CSV.generate(options) do |csv|
+  	column_names = ["first", "last", "phone", "email", "balance", "country"]
+    csv << column_names
+    object.each do |obj|
+      csv << obj.attributes.values_at(*column_names)
+    end
+  end
+  end
+
   rescue_from CanCan::AccessDenied do |exception|
 	  flash[:alert] = "Access restricted to admins only!"
 	  redirect_to root_url
