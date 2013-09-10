@@ -19,6 +19,7 @@
   <div><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>
 
+  <div><%= f.check_box :admin, {checked: true, value: true} %></div>
   <div><%= f.submit "Sign up" %></div>
 <% end %>
 

@@ -1,7 +1,7 @@
 class CustomersController < ApplicationController
   before_filter :authenticate_user!
-  # GET /customers
-  # GET /customers.json
+  load_and_authorize_resource :except => [:payment_history]
+  
   def index
     @customers = Customer.all
 
@@ -11,10 +11,7 @@ class CustomersController < ApplicationController
     end
   end
 
-  # GET /customers/1
-  # GET /customers/1.json
   def show
-    @customer = Customer.find(params[:id])
     @opu_names = []
     @opus = Opu.where(:customer_id => @customer.id)
     @opus.each do |opu|
@@ -26,8 +23,6 @@ class CustomersController < ApplicationController
     end
   end
 
-  # GET /customers/new
-  # GET /customers/new.json
   def new
     @customer = Customer.new
 
@@ -37,9 +32,7 @@ class CustomersController < ApplicationController
     end
   end
 
-  # GET /customers/1/edit
   def edit
-    @customer = Customer.find(params[:id])
   end
 
   def payment_history
@@ -47,8 +40,6 @@ class CustomersController < ApplicationController
     @payments = Payment.where(:customer_id => @customer.id)
   end
 
-  # POST /customers
-  # POST /customers.json
   def create
     @customer = Customer.new(params[:customer])
     @customer.status = "Not active"
@@ -64,11 +55,7 @@ class CustomersController < ApplicationController
     end
   end
 
-  # PUT /customers/1
-  # PUT /customers/1.json
   def update
-    @customer = Customer.find(params[:id])
-
     respond_to do |format|
       if @customer.update_attributes(params[:customer])
         format.html { redirect_to @customer, notice: 'Customer was successfully updated.' }
@@ -80,8 +67,6 @@ class CustomersController < ApplicationController
     end
   end
 
-  # DELETE /customers/1
-  # DELETE /customers/1.json
   def destroy
     @customer = Customer.find(params[:id])
     @customer.destroy

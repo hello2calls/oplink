@@ -5,8 +5,10 @@
     <th>Amount</th>
     <th>Date</th>
     <th></th>
-    <th></th>
-    <th></th>
+    <% if can? :edit, @customer %>
+      <th></th>
+      <th></th>
+    <% end %>
   </tr>
 
 <% @payments.each do |payment| %>
@@ -14,12 +16,15 @@
     <td><%= payment.amount %></td>
     <td><%= payment.date %></td>
     <td><%= link_to 'Show', payment %></td>
-    <td><%= link_to 'Edit', edit_payment_path(payment) %></td>
-    <td><%= link_to 'Destroy', payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% if can? :edit, @customer %>
+      <td><%= link_to 'Edit', edit_payment_path(payment) %></td>
+      <td><%= link_to 'Destroy', payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New Payment', new_payment_path %>
+<% if can? :edit, @customer %>
+  <%= link_to 'New Payment', new_payment_path %>
+<% end %>

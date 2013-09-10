@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130904182317) do
+ActiveRecord::Schema.define(:version => 20130910154741) do
 
   create_table "csn_customers", :force => true do |t|
     t.datetime "activation_date"
@@ -56,12 +56,12 @@ ActiveRecord::Schema.define(:version => 20130904182317) do
 
   create_table "payments", :force => true do |t|
     t.integer  "customer_id"
+    t.integer  "opu_id"
     t.float    "amount"
     t.datetime "date"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.string   "opu_sn"
-    t.integer  "opu_id"
   end
 
   create_table "users", :force => true do |t|
@@ -77,6 +77,7 @@ ActiveRecord::Schema.define(:version => 20130904182317) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.boolean  "admin"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

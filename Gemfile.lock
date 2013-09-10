@@ -14,10 +14,6 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
-    actionwebservice (0.6.0)
-      actionpack (>= 1.5.1)
-      activerecord (>= 1.8.0)
-      activesupport (>= 1.0.1)
     activemodel (3.2.14)
       activesupport (= 3.2.14)
       builder (~> 3.0.0)
@@ -38,6 +34,7 @@ GEM
     arel (3.0.2)
     bcrypt-ruby (3.1.1)
     builder (3.0.4)
+    cancan (1.6.10)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -156,12 +153,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionwebservice
+  cancan
   coffee-rails (~> 3.2.1)
   devise
   jquery-rails
   mysql2
-  nokogiri
   rails (= 3.2.14)
   rufus-scheduler (= 2.0.7)
   sass-rails (~> 3.2.3)

@@ -18,14 +18,17 @@
     <td><%= customer.first + " " + customer.last %></td>
     <td><%= opu.created_at %></td>
     <td>
-      <%= link_to "Add payment", :c_id => customer.id, :controller => "payments", :action => "new", :class => 'btn' %> |
       <%= link_to "Details", opu_path(opu) %> |
-      <%= link_to "Edit", edit_opu_path(opu) %> |
-      <%= link_to "Destroy", opu_path(opu), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      <% if can? :edit, opu %>
+        <%= link_to "Add payment", :c_id => customer.id, :controller => "payments", :action => "new", :class => 'btn' %> |
+        <%= link_to "Edit", edit_opu_path(opu) %> |
+        <%= link_to "Destroy", opu_path(opu), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      <% end %>
     </td>
     </tr>
     <% end -%>
    </tbody>
 </table>
-
-<%= link_to "New", new_opu_path, :class => 'btn btn-primary' %>
+<% if can? :edit, @opus %>
+  <%= link_to "New", new_opu_path, :class => 'btn btn-primary' %>
+<% end %>

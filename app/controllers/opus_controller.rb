@@ -1,6 +1,6 @@
 class OpusController < ApplicationController
-  # GET /opus
-  # GET /opus.json
+  load_and_authorize_resource
+
   def index
     @opus = Opu.all
     respond_to do |format|
@@ -9,19 +9,13 @@ class OpusController < ApplicationController
     end
   end
 
-  # GET /opus/1
-  # GET /opus/1.json
   def show
-    @opu = Opu.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @opu }
     end
   end
 
-  # GET /opus/new
-  # GET /opus/new.json
   def new
     @opu = Opu.new
     respond_to do |format|
@@ -30,13 +24,9 @@ class OpusController < ApplicationController
     end
   end
 
-  # GET /opus/1/edit
   def edit
-    @opu = Opu.find(params[:id])
   end
 
-  # POST /opus
-  # POST /opus.json
   def create
     @opu = Opu.new(params[:opu])
     respond_to do |format|
@@ -50,8 +40,6 @@ class OpusController < ApplicationController
     end
   end
 
-  # PUT /opus/1
-  # PUT /opus/1.json
   def update
     @opu = Opu.find(params[:id])
 
@@ -66,8 +54,6 @@ class OpusController < ApplicationController
     end
   end
 
-  # DELETE /opus/1
-  # DELETE /opus/1.json
   def destroy
     @opu = Opu.find(params[:id])
     @opu.destroy

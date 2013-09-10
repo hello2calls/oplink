@@ -13,8 +13,7 @@ group :test do
 end
 
 gem 'devise'
-gem 'nokogiri'
-gem 'actionwebservice'
+gem 'cancan'
 #for working with soap api
 gem 'savon', '=1.2.0'
 # Gems used only for assets and not required

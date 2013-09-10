@@ -7,8 +7,10 @@
     <th><%= sortable 'opu_sn' %></th>
     <th>Customer</th>
     <th></th>
-    <th></th>
-    <th></th>
+    <% if can? :edit, @payments %>
+      <th></th>
+      <th></th>
+    <% end %>
   </tr>
 
 <% @payments.each do |payment| %>
@@ -18,12 +20,15 @@
     <td><%= payment.opu_sn %></td>
     <td><%= Customer.find(payment.customer_id).first + " " + Customer.find(payment.customer_id).last rescue nil%></td>
     <td><%= link_to 'Details', payment %></td>
-    <td><%= link_to 'Edit', edit_payment_path(payment) %></td>
-    <td><%= link_to 'Destroy', payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% if can? :edit, payment %>
+      <td><%= link_to 'Edit', edit_payment_path(payment) %></td>
+      <td><%= link_to 'Destroy', payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New Payment', new_payment_path, :class => 'btn btn-primary' %>
+<% if can? :edit, @payments %>
+  <%= link_to 'New Payment', new_payment_path, :class => 'btn btn-primary' %>
+<% end %>

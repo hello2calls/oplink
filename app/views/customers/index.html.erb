@@ -17,11 +17,17 @@
     <td><%= customer.status %></td>
     <td><%= customer.first + " " + customer.last %></td>
     <td>
-      <%= link_to "Add OPU", :c_id => customer.id, :controller => "opus", :action => "new" %> |
+      <% if can? :edit, customer %>
+        <%= link_to "Add OPU", :c_id => customer.id, :controller => "opus", :action => "new" %> |
+      <% end %>
       <%= link_to "View payments", :id => customer.id, :action => 'payment_history' %> |
       <%= link_to "Details", customer_path(customer) %> |
-      <%= link_to "Edit", edit_customer_path(customer) %> |
-      <%= link_to "Destroy", customer_path(customer), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      <% if can? :edit, customer %>
+        <%= link_to "Edit", edit_customer_path(customer) %> |
+      <% end %>
+      <% if can? :destroy, customer %>
+        <%= link_to "Destroy", customer_path(customer), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      <% end %>
     </td>
     </tr>
     <% end -%>

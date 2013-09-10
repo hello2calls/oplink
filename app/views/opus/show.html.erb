@@ -20,8 +20,10 @@
 </table>
 
 <div class="form-actions">
-<%= link_to "Change Status", :customer_id => @opu.customer_id, :id => @opu.id, :controller => "home", :action => "activate_disable"%> |
 <%= link_to "Back", opus_path, :class => 'btn'  %>
-<%= link_to "Edit", edit_opu_path(@opu), :class => 'btn' %>
-<%= link_to "Delete", opu_path(@opu), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :class => 'btn' %>
+<% if can? :edit, @opu %>
+  <%= link_to "Change Status", :customer_id => @opu.customer_id, :id => @opu.id, :controller => "home", :action => "activate_disable"%> |
+  <%= link_to "Edit", edit_opu_path(@opu), :class => 'btn' %>
+  <%= link_to "Delete", opu_path(@opu), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :class => 'btn' %>
+<% end %>
 </div>

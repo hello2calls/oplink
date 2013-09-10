@@ -1,9 +1,8 @@
 require 'rufus/scheduler'
 class PaymentsController < ApplicationController
-  before_filter :authenticate_user!
+  load_and_authorize_resource
+
   SCHEDULER = Rufus::Scheduler.start_new
-  # GET /payments
-  # GET /payments.json
   helper_method :sort_column, :sort_direction
   def index
     @payments = Payment.order(sort_column + ' ' + sort_direction)
@@ -14,8 +13,6 @@ class PaymentsController < ApplicationController
     end
   end
 
-  # GET /payments/1
-  # GET /payments/1.json
   def show
     @payment = Payment.find(params[:id])
     respond_to do |format|
@@ -24,8 +21,6 @@ class PaymentsController < ApplicationController
     end
   end
 
-  # GET /payments/new
-  # GET /payments/new.json
   def new
     @payment = Payment.new
     respond_to do |format|
@@ -34,13 +29,9 @@ class PaymentsController < ApplicationController
     end
   end
 
-  # GET /payments/1/edit
   def edit
-    @payment = Payment.find(params[:id])
   end
 
-  # POST /payments
-  # POST /payments.json
   def create
     @payment = Payment.new(params[:payment])
     @opu = Opu.find(@payment.opu_id)
@@ -97,11 +88,7 @@ class PaymentsController < ApplicationController
     end
   end
 
-  # PUT /payments/1
-  # PUT /payments/1.json
   def update
-    @payment = Payment.find(params[:id])
-
     respond_to do |format|
       if @payment.update_attributes(params[:payment])
         format.html { redirect_to @payment, notice: 'Payment was successfully updated.' }
@@ -113,10 +100,7 @@ class PaymentsController < ApplicationController
     end
   end
 
-  # DELETE /payments/1
-  # DELETE /payments/1.json
   def destroy
-    @payment = Payment.find(params[:id])
     @payment.destroy
 
     respond_to do |format|

@@ -18,4 +18,13 @@ class ApplicationController < ActionController::Base
 	end
 	customer.save
   end
+
+  rescue_from CanCan::AccessDenied do |exception|
+	  flash[:alert] = "Access restricted to admins only!"
+	  redirect_to root_url
+  end
+  rescue_from ActiveRecord::RecordNotFound do |exception|
+  	flash[:alert] = "Record does not exist!"
+	redirect_to root_url
+  end
 end

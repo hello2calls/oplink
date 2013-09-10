@@ -1,4 +1,3 @@
-require 'nokogiri'
 require 'savon'
 require 'rufus/scheduler'
 require 'mail'
@@ -6,37 +5,7 @@ class HomeController < ApplicationController
 	before_filter :authenticate_user!
 	SEARCH_OPTIONS = ['Name', 'Email', 'Phone', 'ID']
 	SCHEDULER = Rufus::Scheduler.start_new
-	def index
-		doc = Nokogiri::XML('<?xml version="1.0"?>
-		  <library>
-		    <NAME><![CDATA[Favorite Books]]></NAME>
-		    <book ISBN="11342343">
-		      <title>To Kill A Mockingbird</title>
-		      <description><![CDATA[Description#1]]></description>
-		      <author>Harper Lee</author>
-		    </book>
-		    <book ISBN="989894781234">
-		      <title>Catcher in the Rye</title>
-		      <description><![CDATA[This is an extremely intense description.]]></description>
-		      <author>J. D. Salinger</author>
-		    </book>
-		    <book ISBN="123456789">
-		      <title>Murphy\'s Gambit</title>
-		      <description><![CDATA[Daughter finds her dad!]]></description>
-		      <author>Syne Mitchell</author>
-		    </book>
-		  </library>')
-
-		doc.css('book').each do |node|
-		  children = node.children
-
-		  book = {
-		    "isbn" => node['ISBN'], 
-		    "title" => children.css('title').inner_text, 
-		    "description" => children.css('description').inner_text, 
-		    "author" => children.css('author').inner_text
-		  }
-		end
+	def index	
 	end
 
 	def activate_disable
@@ -196,25 +165,6 @@ class HomeController < ApplicationController
 	    	@temp = Payment.where(:customer_id => @customer.id)
 	    	return @customer
 	    end
-    end
-
-    def setStatus(customer)
-    	opus = Opu.all
-    	act = false
-    	opus.each do |opu|
-    	  if opu.status == "Active"
-    	  	act = true
-    	  	break
-    	  else
-    	  	act = false
-    	  end
-    	end
-    	if act == true
-    		customer.status = "Active"
-    	else
-    		customer.status = "Not Active"
-    	end
-    	customer.save
     end
 end
 
