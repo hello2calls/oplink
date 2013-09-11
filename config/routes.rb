@@ -4,7 +4,9 @@ OplinkManagement::Application.routes.draw do
   get "csnCustomers/getCustomer"
   resources :opus
 
+  post "payments/index"
   resources :payments
+
   post "customer/payment_history"
   get "customers/payment_history"
   resources :customers

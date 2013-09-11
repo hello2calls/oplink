@@ -1,5 +1,4 @@
-<% if can? :edit, @payments %>
-  <%= form_tag(:action => 'index') do %>
+  <%= form_tag(:action => :index) do %>
     <%= label_tag "from" %>
     <%= date_select("viewFrom", "from", :order => [:day, :month, :year]) %>
     <%= label_tag "to" %>
@@ -25,7 +24,6 @@
     border:1px solid #E8124F;
   }
   </style>
-  <% end %>
 <% end %>
 <h1>Listing payments</h1>
 

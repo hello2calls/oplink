@@ -5,7 +5,6 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'rufus-scheduler', '2.0.7'
-gem "sequel", "~> 3.47.0"
 group :development, :production do 
 	gem 'mysql2'
 end

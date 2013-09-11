@@ -1,11 +1,9 @@
 require 'rufus/scheduler'
 class PaymentsController < ApplicationController
-  load_and_authorize_resource
 
   SCHEDULER = Rufus::Scheduler.start_new
   helper_method :sort_column, :sort_direction
   def index
-    @payments = []
     if params['viewFrom']
       @from_date = Time.new(params['viewFrom']['from(1i)'], params['viewFrom']['from(2i)'], params['viewFrom']['from(3i)'])
     else
@@ -19,22 +17,22 @@ class PaymentsController < ApplicationController
     @from_date = @from_date.strftime("%Y-%m-%d") + ' 00:00:00'
     @to_date = @to_date.strftime("%Y-%m-%d") + ' 23:59:59'
     if params['viewFrom'] and params['viewTo']
-      @payments = ActiveRecord::Base.connection.execute("SELECT * FROM payments WHERE date between '#{@from_date}' and  '#{@to_date}'")
+      #@payments = ActiveRecord::Base.connection.execute("SELECT * FROM payments WHERE date between '#{@from_date}' and  '#{@to_date}'")
+      @payments = Payment.where(date: (@from_date.to_datetime..@to_date.to_datetime))
     else
       @payments = Payment.order(sort_column + ' ' + sort_direction)
-    end
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @payments }
     end
   end
 
   def show
-    @payment = Payment.find(params[:id])
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @payment }
+    if params[:id].to_s == "index"
+      redirect_to "/payments/?direction=#{params[:direction]}&sort=#{params[:sort]}"
+    else
+      @payment = Payment.find(params[:id])
+      respond_to do |format|
+        format.html # show.html.erb
+        format.json { render json: @payment }
+      end
     end
   end
 
