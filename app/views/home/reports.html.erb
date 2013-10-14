@@ -1,0 +1,28 @@
+<p>
+  Download:
+  <%= link_to "CSV", "/home/reports.csv" %> |
+  <%= link_to "Excel", "/home/reports.xls" %>
+</p>
+<h1>Active Customers</h1>
+<table class="table table-striped">
+ <thead>
+  <tr>
+    <th>ID</th>
+    <th>Status</th>
+    <th>Name</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% if @active_customers %>
+	  <% @active_customers.each do |customer| -%>
+	   <tr>
+	    <td><%= customer.id %></td>
+	    <td><%= customer.status %></td>
+	    <td><%= customer.first + " " + customer.last %></td>
+	    <td><%= link_to "Details", customer_path(customer) %></td>
+	    </tr>
+	    <% end -%>
+	   </tbody>
+  <%end%>
+</table>

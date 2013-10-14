@@ -1,0 +1,18 @@
+
+<div id="login">
+  <h2><span class="fontawesome-lock"></span>Sign In</h2>
+  <fieldset>
+	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+	  <label for="email"><%= f.label :email %></label>
+	  <%= f.email_field :email, :autofocus => true %>
+
+	  <p><label for="password">Password</label></p>
+	  <%= f.password_field :password %>
+	  <% if devise_mapping.rememberable? -%>
+	    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+	  <% end -%>
+
+	  <p><input type="submit" value="Sign In"></p>
+	<% end %>
+  </fieldset>
+</div>

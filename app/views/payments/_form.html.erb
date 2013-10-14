@@ -1,0 +1,36 @@
+<%= form_for(@payment) do |f| %>
+  <% if @payment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@payment.errors.count, "error") %> prohibited this payment from being saved:</h2>
+
+      <ul>
+      <% @payment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :customer_id %><br />
+    <% if params[:c_id] %>
+      <%= f.select('customer_id', [[Customer.find(params[:c_id].to_i).first + " " + Customer.find(params[:c_id].to_i).last, Customer.find(params[:c_id].to_i).id]])%>
+    <% else %>
+      <%= f.select('customer_id', Customer.all.collect {|a| [a.first + " " + a.last, a.id]})%>
+    <% end %>
+  </div>
+  <div class="field">
+    <%= f.label :opu_sn %><br />
+    <%= f.select('opu_id', Opu.all.collect {|a| [a.sn, a.id]})%>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount, :placeholder => '0.0' %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.datetime_select :date, :value => Time.now %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

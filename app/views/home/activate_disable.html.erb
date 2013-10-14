@@ -1,0 +1,12 @@
+<%= form_tag(:action => "after_activate") do %>
+    <br>
+    <%= label_tag "Customer ID" %>
+    <%= number_field_tag 'id', @customer.id, :disabled=>true %><br>
+    <%= label_tag "Method" %>
+    <%= select_tag('method', options_for_select([["Activate","1"], ["Disable","0" ]]))%><br>
+    <%= label_tag "Authorization header: "%>
+    <%= text_field_tag 'auth', session[:auth] %><br>
+    <%= label_tag ("OPU Number(SN)") %>
+    <%= text_field_tag 'opu', Opu.find(@id).sn %><br>
+    <%= submit_tag "Submit", :class => "common_btn", :id => "contact_submit_btn" %>
+<% end %>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OplinkManagement</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "nivo-slider", :media => "screen" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<% if user_signed_in? %>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <%= link_to 'Home', "/home/index", :class => 'navbar-link' %> |
+            <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+            <%= link_to "View Customers", "/customers/", :class => 'navbar-link' %> |
+            <%= link_to "View Payments", "/payments/", :class => 'navbar-link' %> |
+            <%= link_to "View Opus", "/opus/", :class => 'navbar-link' %> |
+            <%= link_to "Get Opu Info", "/home/getOpuInfo", :class => 'navbar-link' %> |
+            <%= link_to "Reports", "/home/reports", :class => 'navbar-link' %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="status">
+  You are Logged in as <strong><%= current_user.email %></strong>.
+    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+ </div>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path  %> |
+  <%= link_to "Login", new_user_session_path %>
+<% end %>
+<% if notice %>
+  <p class="notice"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="error"><%= alert %></p>
+<% end %>
+<%= yield %>
+</body>
+<footer>
+  Powered by Ciao Telecom, INC. USA
+</footer>
+</html>

@@ -1,0 +1,3849 @@
+Connecting to database specified by database.yml
+  [1m[36m (84.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20130819225117)
+Migrating to CreateCustomers (20130821233808)
+Migrating to CreatePayments (20130822174219)
+Migrating to RemoveopuSnFromCustomer (20130827231217)
+Migrating to CreateOpus (20130827232452)
+Migrating to AddOpuSnToPayments (20130828170953)
+Migrating to AddStatusToOpus (20130828202645)
+Migrating to CreateCsnCustomers (20130904182317)
+Migrating to AddAdminNumberToUsers (20130910154741)
+  [1m[35m (44.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-14 10:22:18 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (96.4ms)
+Compiled twitter/bootstrap.css  (591ms)  (pid 16659)
+Compiled bootstrap.css  (561ms)  (pid 16659)
+Compiled customers.css  (47ms)  (pid 16659)
+Compiled home.css  (1ms)  (pid 16659)
+Compiled nivo-slider.css  (0ms)  (pid 16659)
+Compiled opus.css  (1ms)  (pid 16659)
+Compiled payments.css  (1ms)  (pid 16659)
+Compiled application.css  (1357ms)  (pid 16659)
+Compiled jquery.js  (1ms)  (pid 16659)
+Compiled jquery_ujs.js  (0ms)  (pid 16659)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 16659)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 16659)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 16659)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 16659)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 16659)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 16659)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 16659)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 16659)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 16659)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 16659)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 16659)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 16659)
+Compiled twitter/bootstrap.js  (211ms)  (pid 16659)
+Compiled bootstrap.js  (67ms)  (pid 16659)
+Compiled customers.js  (0ms)  (pid 16659)
+Compiled home.js  (0ms)  (pid 16659)
+Compiled jquery-1.9.0.min.js  (0ms)  (pid 16659)
+Compiled jquery.nivo.slider.js  (0ms)  (pid 16659)
+Compiled jquery.nivo.slider.pack.js  (0ms)  (pid 16659)
+Compiled opus.js  (0ms)  (pid 16659)
+Compiled payments.js  (0ms)  (pid 16659)
+Compiled application.js  (458ms)  (pid 16659)
+Completed 200 OK in 2344ms (Views: 2062.1ms | ActiveRecord: 162.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:21 -0500
+Served asset /application.css - 200 OK (11ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:21 -0500
+Served asset /customers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:21 -0500
+Served asset /opus.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:21 -0500
+Served asset /payments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:22 -0500
+Served asset /nivo-slider.css - 200 OK (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:22 -0500
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:22 -0500
+Served asset /jquery.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:22 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:22 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:22 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:22 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:22 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:22 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:22 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:22 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:22 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:22 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:23 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:23 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:23 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:23 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:23 -0500
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:23 -0500
+Served asset /customers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:23 -0500
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:23 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:23 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:23 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:23 -0500
+Served asset /opus.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:23 -0500
+Served asset /payments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:23 -0500
+Served asset /application.js - 304 Not Modified (30ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-10-14 10:22:37 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nCT0llvu+AHYsluwrszU44g3uHjRlpH4RubFlWerq04=", "user"=>{"email"=>"aldi@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  [1m[36mUser Load (44.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'aldi@test.com' LIMIT 1[0m
+Completed 401 Unauthorized in 218ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nCT0llvu+AHYsluwrszU44g3uHjRlpH4RubFlWerq04=", "user"=>{"email"=>"aldi@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  Rendered devise/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 87ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:38 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:39 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:39 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:39 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:39 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:39 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:39 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:39 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:39 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:39 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-10-14 10:22:45 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nCT0llvu+AHYsluwrszU44g3uHjRlpH4RubFlWerq04=", "user"=>{"email"=>"aldi@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  [1m[35mUser Load (44.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'aldi@test.com' LIMIT 1
+  [1m[36m (55.9ms)[0m  [1mBEGIN[0m
+  [1m[35m (44.1ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2013-10-14 14:14:47', `current_sign_in_at` = '2013-10-14 15:22:45', `sign_in_count` = 34, `updated_at` = '2013-10-14 15:22:46' WHERE `users`.`id` = 1
+  [1m[36m (75.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 365ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 10:22:46 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (45.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 76ms (Views: 28.2ms | ActiveRecord: 45.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:47 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:47 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:47 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:47 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:47 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:47 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:47 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:47 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:47 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:47 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:47 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:47 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:48 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:22:49 -0500
+Served asset /oplink.png - 200 OK (39ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:22:49 -0500
+Served asset /ciao.jpg - 200 OK (17ms)
+
+
+Started GET "/customers/" for 127.0.0.1 at 2013-10-14 10:22:54 -0500
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (67.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (45.0ms)[0m  SELECT `customers`.* FROM `customers` 
+  Rendered customers/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 290ms (Views: 14.1ms | ActiveRecord: 245.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:54 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:54 -0500
+Served asset /customers.css - 304 Not Modified (44ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:54 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:55 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:56 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:56 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:56 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:56 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:56 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:56 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:56 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:56 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:56 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:56 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:22:56 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/customers/payment_history?id=4" for 127.0.0.1 at 2013-10-14 10:23:09 -0500
+Processing by CustomersController#payment_history as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (44.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (54.5ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mPayment Load (44.2ms)[0m  [1mSELECT `payments`.* FROM `payments` WHERE `payments`.`customer_id` = 4[0m
+  Rendered customers/payment_history.html.erb within layouts/application (209.1ms)
+Completed 200 OK in 326ms (Views: 25.1ms | ActiveRecord: 293.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:09 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:10 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:11 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:11 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:11 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:11 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:11 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:11 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:11 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:11 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:11 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:11 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/opus/" for 127.0.0.1 at 2013-10-14 10:23:17 -0500
+Processing by OpusController#index as HTML
+  [1m[35mUser Load (44.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mOpu Load (51.6ms)[0m  [1mSELECT `opus`.* FROM `opus` [0m
+  [1m[35mCustomer Load (44.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  Rendered opus/index.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 318ms (Views: 15.5ms | ActiveRecord: 279.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:18 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:18 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:18 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:18 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:18 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:18 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:18 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:19 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:20 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:20 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:20 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home/getOpuInfo" for 127.0.0.1 at 2013-10-14 10:23:25 -0500
+Processing by HomeController#getOpuInfo as HTML
+  [1m[36mUser Load (45.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/getOpuInfo.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 60ms (Views: 12.7ms | ActiveRecord: 45.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:25 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:25 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:25 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:25 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:25 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:26 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:27 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:27 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:27 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:27 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2013-10-14 10:23:35 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (44.9ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 62ms (Views: 15.5ms | ActiveRecord: 44.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:35 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:35 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:35 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:35 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:35 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:23:35 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:36 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:37 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:37 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:37 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:37 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:23:37 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:23:37 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:23:37 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:23:40 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:23:40 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:23:42 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:23:43 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:23:43 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:23:45 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:23:46 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:23:46 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:23:48 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:23:49 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:23:49 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:23:51 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:23:52 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:23:52 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:23:54 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:23:55 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:23:55 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:23:57 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:23:58 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:23:58 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:00 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:01 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:01 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:03 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:04 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:04 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:06 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:07 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:07 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:09 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:10 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:10 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:12 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:13 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:13 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:15 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:16 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:16 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:18 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:19 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:19 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:21 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:22 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:22 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:24 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:25 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:25 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:27 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:28 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:28 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:30 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:31 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:31 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:33 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:34 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:35 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:36 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:37 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:37 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:39 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:40 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:40 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:42 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:43 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:43 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:45 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:46 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:46 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:48 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:49 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:49 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2013-10-14 10:24:49 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (46.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Compiled application.css  (3ms)  (pid 16659)
+Completed 200 OK in 161ms (Views: 113.0ms | ActiveRecord: 46.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /application.css - 200 OK (9ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:50 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:51 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:54 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:54 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:56 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:24:57 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:57 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:24:59 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:00 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:00 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:02 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:03 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:04 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:05 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:06 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:06 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2013-10-14 10:25:07 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (48.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 63ms (Views: 13.1ms | ActiveRecord: 48.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /bootstrap.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:08 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:09 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:13 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:13 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:14 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:15 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:16 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:17 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:18 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:19 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:20 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:22 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:22 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:23 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:24 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:25 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:26 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:27 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:28 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:29 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:30 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:31 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:32 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:33 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:34 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:35 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:36 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:37 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:38 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:39 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:40 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:41 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:42 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:43 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:44 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:46 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:46 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:47 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:48 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:49 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:50 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:51 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:52 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:53 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:55 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:55 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:56 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:25:57 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:58 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:25:59 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:26:00 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:26:01 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2013-10-14 10:26:01 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (44.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Compiled home.css  (38ms)  (pid 16659)
+Compiled application.css  (3ms)  (pid 16659)
+Completed 200 OK in 171ms (Views: 125.7ms | ActiveRecord: 44.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:01 -0500
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:01 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:01 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:01 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:02 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:03 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:03 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:03 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:03 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:03 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:03 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:03 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:03 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:26:03 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:26:03 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:26:06 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:26:06 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:26:08 -0500
+Served asset /ciao.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:26:09 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/payments/" for 127.0.0.1 at 2013-10-14 10:26:09 -0500
+Processing by PaymentsController#index as HTML
+  [1m[35mUser Load (44.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPayment Load (44.6ms)[0m  [1mSELECT `payments`.* FROM `payments` ORDER BY date asc[0m
+  [1m[35mCustomer Load (44.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  Rendered payments/index.html.erb within layouts/application (150.8ms)
+Completed 200 OK in 200ms (Views: 29.9ms | ActiveRecord: 132.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:10 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:11 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2013-10-14 10:26:20 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (169.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 185ms (Views: 14.1ms | ActiveRecord: 169.2ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:20 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:20 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:21 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:22 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:22 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:22 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:22 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:22 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:22 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:22 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:22 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:22 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:23 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:23 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:26:23 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao.jpg" for 127.0.0.1 at 2013-10-14 10:26:23 -0500
+Served asset /ciao.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/oplink.png" for 127.0.0.1 at 2013-10-14 10:26:26 -0500
+Served asset /oplink.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-10-14 10:26:29 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"66O4e5XACqlokdsmZ2PiSrq2+2S2yM5Fkk7YbhZ0jxg="}
+  [1m[36mUser Load (44.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (49.3ms)[0m  BEGIN
+  [1m[36m (45.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 186ms (ActiveRecord: 139.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-14 10:26:29 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-14 10:26:29 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:29 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:29 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:29 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:29 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:29 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:29 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:29 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:26:29 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:30 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:31 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:31 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:31 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:26:31 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-14 10:28:10 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Compiled application.css  (3ms)  (pid 16659)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:10 -0500
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:10 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:10 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:10 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:10 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:10 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:10 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:11 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:12 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:12 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:12 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:12 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:12 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:12 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:12 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:12 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:12 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:12 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-14 10:28:28 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:29 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:30 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-14 10:28:37 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:37 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:37 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:37 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:37 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:37 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:37 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:37 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:37 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:37 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:37 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:37 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:38 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:39 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:39 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:39 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2013-10-14 10:28:43 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:43 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:43 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:43 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:43 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:43 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:43 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:43 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:28:43 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:43 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:44 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:45 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:28:45 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2013-10-14 10:29:14 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:15 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:16 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2013-10-14 10:29:31 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/passwords/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:31 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:31 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:31 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:31 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:32 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:33 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:33 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:33 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:33 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:33 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:33 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:33 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:33 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:33 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-14 10:29:47 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:47 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:47 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:47 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:47 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:47 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:47 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:47 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:48 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:49 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:49 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:49 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:49 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:49 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:49 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:29:49 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-14 10:30:20 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:20 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:20 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:20 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:21 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:21 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:21 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:21 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:21 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:21 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:21 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:21 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:21 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:21 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:21 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:21 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:22 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:22 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:22 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:22 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:22 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:22 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:22 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:22 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:22 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:22 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:22 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:22 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:23 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:23 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:23 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:23 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:23 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-14 10:30:39 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:40 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:30:41 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-14 10:46:23 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:46:23 -0500
+Served asset /twitter/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-10-14 10:46:23 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-10-14 10:46:23 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-14 10:46:23 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-14 10:46:23 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-10-14 10:46:23 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-10-14 10:46:23 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-10-14 10:46:23 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:23 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:24 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:25 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:25 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-14 10:46:25 -0500
+Served asset /application.js - 304 Not Modified (0ms)

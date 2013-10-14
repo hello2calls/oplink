@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  phone: MyString
+  opu_sn: MyString
+  activation_date: 2013-08-21 16:38:08
+  expiration_date: 2013-08-21 16:38:08
+  first: 
+  city: MyString
+  country: MyString
+  email: MyString
+  address: MyString
+  balance: 1.5
+
+two:
+  phone: MyString
+  opu_sn: MyString
+  activation_date: 2013-08-21 16:38:08
+  expiration_date: 2013-08-21 16:38:08
+  first: 
+  city: MyString
+  country: MyString
+  email: MyString
+  address: MyString
+  balance: 1.5

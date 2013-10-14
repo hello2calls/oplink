@@ -1,0 +1,61 @@
+  <%= form_tag(:action => :index) do %>
+    <%= label_tag "from" %>
+    <%= date_select("viewFrom", "from", :order => [:day, :month, :year]) %>
+    <%= label_tag "to" %>
+    <%= date_select("viewTo", "to", :order => [:day, :month, :year])%>
+    <input type="submit" class="styled-button-7" value="Filter" />
+  <style type="text/css">
+  .styled-button-7 {
+    background:#FF5DB1;
+    background:-moz-linear-gradient(top,#FF5DB1 0%,#E94A86 100%);
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#FF5DB1),color-stop(100%,#E94A86));
+    background:-webkit-linear-gradient(top,#FF5DB1 0%,#E94A86 100%);
+    background:-o-linear-gradient(top,#FF5DB1 0%,#E94A86 100%);
+    background:-ms-linear-gradient(top,#FF5DB1 0%,#E94A86 100%);
+    background:linear-gradient(top,#FF5DB1 0%,#E94A86 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5DB1',endColorstr='#E94A86',GradientType=0);
+    padding:5px 7px;
+    color:#fff;
+    font-family:'Helvetica Neue',sans-serif;
+    font-size:12px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border:1px solid #E8124F;
+  }
+  </style>
+<% end %>
+<h1>Listing payments</h1>
+
+<table>
+  <tr>
+    <th><%= sortable 'amount' %></th>
+    <th><%= sortable 'date' %></th>
+    <th><%= sortable 'opu_sn' %></th>
+    <th>Customer</th>
+    <th></th>
+    <% if can? :edit, @payments %>
+      <th></th>
+      <th></th>
+    <% end %>
+  </tr>
+
+<% @payments.each do |payment| %>
+  <tr>
+    <td><%= payment.amount %></td>
+    <td><%= payment.date %></td>
+    <td><%= payment.opu_sn %></td>
+    <td><%= Customer.find(payment.customer_id).first + " " + Customer.find(payment.customer_id).last rescue nil%></td>
+    <td><%= link_to 'Details', payment %></td>
+    <% if can? :edit, payment %>
+      <td><%= link_to 'Edit', edit_payment_path(payment) %></td>
+      <td><%= link_to 'Destroy', payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<% if can? :edit, @payments %>
+  <%= link_to 'New Payment', new_payment_path, :class => 'btn btn-primary' %>
+<% end %>

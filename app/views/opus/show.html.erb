@@ -1,0 +1,29 @@
+
+<table class="table table-striped table-bordered table-condensed">
+  <tbody>
+  <tr>
+    <td><b>Customer: </b> <%= @opu.customer_id %></td>
+  </tr>
+  <tr>
+    <td><b>Sn: </b> <%= @opu.sn %></td>
+  </tr>
+  <tr>
+    <td><b>Activation date: </b> <%= @opu.activation_date %></td>
+  </tr>
+  <tr>
+    <td><b>Expiration date: </b> <%= @opu.expiration_date %></td>
+  </tr>
+  <tr>
+    <td><b>Status: </b> <%= @opu.status %></td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="form-actions">
+<%= link_to "Back", opus_path, :class => 'btn'  %>
+<% if can? :edit, @opu %>
+  <%= link_to "Change Status", :customer_id => @opu.customer_id, :id => @opu.id, :controller => "home", :action => "activate_disable"%> |
+  <%= link_to "Edit", edit_opu_path(@opu), :class => 'btn' %>
+  <%= link_to "Delete", opu_path(@opu), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :class => 'btn' %>
+<% end %>
+</div>

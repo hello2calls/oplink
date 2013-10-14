@@ -1,0 +1,6 @@
+<%= form_tag(:action => "displayOpuInfo") do %>
+    <br>
+    <%= label_tag ("Search by phone number or OPU SN") %>
+    <%= text_field_tag 'input' %><br>
+    <%= submit_tag "Submit", :class => "btn", :id => "contact_submit_btn" %>
+<% end %>

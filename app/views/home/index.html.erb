@@ -1,0 +1,21 @@
+Welcome to Ciao Oplink management portal!
+<br><br>
+<%= form_tag :action => "showCustomer" do %>
+  <%= label_tag "Search Customer" %>
+  <%= select(:search, :value, HomeController::SEARCH_OPTIONS.collect {|d| [d, HomeController::SEARCH_OPTIONS.index(d) + 1]}, {:include_blank => true}) %><br>
+  <%= text_field_tag "input" %>
+  <%= submit_tag 'Search', :class => "btn"%>
+<% end %>
+
+<div id="slider" class="nivoSlider">
+    <%= image_tag("oplink.png") %>
+    <%= image_tag("ciao.jpg") %>
+</div>
+</div>
+<%= javascript_include_tag "jquery-1.9.0.min" %>
+<%= javascript_include_tag "jquery.nivo.slider" %>
+<script type="text/javascript">
+  $(window).load(function() {
+    $('#slider').nivoSlider();
+  });
+</script>

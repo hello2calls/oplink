@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  customer_id: 1
+  sn: MyString
+  activation_date: 2013-08-27 16:24:52
+  expiration_date: 2013-08-27 16:24:52
+
+two:
+  customer_id: 1
+  sn: MyString
+  activation_date: 2013-08-27 16:24:52
+  expiration_date: 2013-08-27 16:24:52

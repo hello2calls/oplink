@@ -1,0 +1,26 @@
+<table class="table table-striped table-bordered table-condensed">
+  <tbody>
+  <tr>
+    <td><b>Amount:</b> <%= @payment.amount %></td>
+  </tr>
+  <tr>
+    <td><b>Date:</b> <%= @payment.date %></td>
+  </tr>
+  <tr>
+    <td><b>Opu Sn:</b> <%= @payment.opu_sn %></td>
+  </tr>
+   <tr>
+    <td><b>Opu ID:</b> <%= @payment.opu_id %></td>
+  </tr>
+  <tr>
+    <td><b>Customer ID:</b> <%= @payment.customer_id %></td>
+  </tr>
+  </tbody>
+</table>
+<div class="form-actions">
+<%= link_to "Back", payments_path, :class => 'btn'  %>
+<% if can? :edit, @payment %>
+  <%= link_to "Edit", edit_payment_path(@payment), :class => 'btn' %>
+  <%= link_to "Delete", payment_path(@payment), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :class => 'btn' %>
+<% end %>
+</div>

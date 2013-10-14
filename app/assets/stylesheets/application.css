@@ -1,0 +1,187 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require twitter/bootstrap
+ *= require_tree .
+ */
+th .current {
+  padding-right: 12px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+th .asc { 
+  /*background-image: url('/assets/up_arrow.png'); */
+}
+
+th .desc { 
+  /*background-image: url('/assets/down_arrow.jpg'); */
+}
+
+body {
+	background-color: #FFFF99;
+	/*color: #000;*/
+	font-family: "Varela Round", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	padding-left: 5px;
+}
+.navbar .navbar-inner {
+  padding-left: 5px;
+  background-color: red; /* it's flat*/
+  background-image: none;
+}
+.navbar-inner {
+	height:35px;
+	font-size:20px;
+	text-decoration:underline;
+}
+
+.navbar-link {
+  color: white;
+}
+
+.navbar-link:hover {
+  color: blue;
+}
+
+input {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
+}
+
+.status{
+	margin-top: 20px;
+	padding-left: 700px;
+	text-align: center;
+	color: green;
+}
+
+#login {
+	margin: 50px auto;
+	width: 400px;
+}
+
+#login h2 {
+	height:20px;
+	background-color: #f95252;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+	color: #fff;
+	font-size: 20px;
+	text-align:center;
+	padding: 20px 20px;
+}
+
+#login h2 span[class*="fontawesome-"] {
+	margin-right: 14px;
+}
+
+#login fieldset {
+	background-color: #C0C0C0;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+	padding: 20px 26px;
+	margin-top: 10px;
+}
+
+#login fieldset p {
+	color: #777;
+	margin-bottom: 14px;
+}
+
+#login fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+#login fieldset input {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#login fieldset input[type="email"], #login fieldset input[type="password"] {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 328px;
+}
+
+#login fieldset input[type="submit"] {
+	background-color: #33cc77;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	padding: 4px 0;
+	width: 100px;
+}
+
+#login fieldset input[type="submit"]:hover {
+	background-color: #28ad63;
+}
+
+table {
+	border-collapse: collapse;
+	margin-top: 10px;
+	text-align: center;
+	background-size: 200px;
+}
+th {
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-decoration: underline;
+}
+th, td {
+	padding:5px;
+	text-align: left;
+	background-color:#CCFFFF;
+}
+table, th, td {
+	border: 1px solid black;
+}
+.list a {
+	color: #600;
+}
+.list a:hover {
+	text-decoration: underline;
+}
+
+
+.notice {
+	font-size: 1.0rem;
+	font-weight: bold;
+	color: green;
+}
+.error {
+	text-transform: lowercase;
+	font-size: 1.0rem;
+	color: red;
+	margin: auto;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: -10px;
+}
+
+footer {
+	height: 40px;
+	width: 800px;
+	margin-top: 10px;
+	font-size: 0.7rem; 
+	padding-top: 2px;
+
+	li {
+		list-style-type: none;
+	}
+}

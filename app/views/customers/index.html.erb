@@ -1,0 +1,37 @@
+<h1>Customers</h1>
+<table class="table table-striped">
+ <thead>
+  <tr>
+    <th>ID</th>
+        <th>
+      <%= t("activerecord.attributes.customer.status", :default => t("activerecord.labels.status", :default => "Status")) %>
+    </th>
+    <th>Name</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @customers.each do |customer| -%>
+   <tr>
+    <td><%= customer.id %></td>
+    <td><%= customer.status %></td>
+    <td><%= customer.first + " " + customer.last %></td>
+    <td>
+      <% if can? :edit, customer %>
+        <%= link_to "Add OPU", :c_id => customer.id, :controller => "opus", :action => "new" %> |
+      <% end %>
+      <%= link_to "View payments", :id => customer.id, :action => 'payment_history' %> |
+      <%= link_to "Details", customer_path(customer) %> |
+      <% if can? :edit, customer %>
+        <%= link_to "Edit", edit_customer_path(customer) %> |
+      <% end %>
+      <% if can? :destroy, customer %>
+        <%= link_to "Destroy", customer_path(customer), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      <% end %>
+    </td>
+    </tr>
+    <% end -%>
+   </tbody>
+</table>
+
+<%= link_to "New", new_customer_path, :class => 'btn btn-primary' %>
