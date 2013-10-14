@@ -89,12 +89,20 @@ input {
 }
 
 #login fieldset {
+<<<<<<< HEAD
 	background-color: #C0C0C0;
 	-webkit-border-radius: 15px 15px 15px 15px;
 	-moz-border-radius: 15px 15px 15px 15px;
 	border-radius: 15px 15px 15px 15px;
 	padding: 20px 26px;
 	margin-top: 10px;
+=======
+	background-color: #fff;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
+>>>>>>> 46b213ebe7ce369268442c874d56c047f9ca71be
 }
 
 #login fieldset p {
