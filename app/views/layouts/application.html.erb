@@ -37,8 +37,7 @@
     <%= link_to "Logout", destroy_user_session_path, method: :delete %>
  </div>
 <% else %>
-  <%= link_to "Sign up", new_user_registration_path  %> |
-  <%= link_to "Login", new_user_session_path %>
+  <%= link_to "Sign up", new_user_registration_path  %>
 <% end %>
 <% if notice %>
   <p class="notice"><%= notice %></p>
@@ -47,8 +46,8 @@
   <p class="error"><%= alert %></p>
 <% end %>
 <%= yield %>
+<div id="footer">
+  <p>Powered by Ciao Telecom, INC. USA</p>
+</div>
 </body>
-<footer>
-  Powered by Ciao Telecom, INC. USA
-</footer>
 </html>

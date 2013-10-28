@@ -1,21 +1,60 @@
-Welcome to Ciao Oplink management portal!
-<br><br>
-<%= form_tag :action => "showCustomer" do %>
-  <%= label_tag "Search Customer" %>
-  <%= select(:search, :value, HomeController::SEARCH_OPTIONS.collect {|d| [d, HomeController::SEARCH_OPTIONS.index(d) + 1]}, {:include_blank => true}) %><br>
-  <%= text_field_tag "input" %>
-  <%= submit_tag 'Search', :class => "btn"%>
-<% end %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+</head>
+<body>
+<div id="content">
+	<%= form_tag :action => "showCustomer" do %>
+	  <%= label_tag "Search Customer" %>
+	  <%= select(:search, :value, HomeController::SEARCH_OPTIONS.collect {|d| [d, HomeController::SEARCH_OPTIONS.index(d) + 1]}, {:include_blank => true}) %><br>
+	  <%= text_field_tag "input" %>
+	  <%= submit_tag 'Search', :class => "btn"%>
+	<% end %>
 
-<div id="slider" class="nivoSlider">
-    <%= image_tag("oplink.png") %>
-    <%= image_tag("ciao.jpg") %>
+	<div id="slider" class="nivoSlider">
+	    <%= image_tag("ciao_oplink.png") %>
+	</div>
+	<%= javascript_include_tag "jquery-1.9.0.min" %>
+	<%= javascript_include_tag "jquery.nivo.slider" %>
+	<script type="text/javascript">
+	  $(window).load(function() {
+	    $('#slider').nivoSlider();
+	  });
+	</script>
+		<div id="colOne">
+			<h2>Welcome to Ciao Oplink security systems!</h2>
+			<p>You can check the usage manual at <a href="http://ciaotelecom.com/ciao-oplink/"><strong>Ciao Oplink Site</strong></a>. We bring the control to your finger tips. Whether you want to know when something goes wrong or simply want to take a look at whats going on in your house, we will provide these updates in real time!</p>
+			<p>Another advatage is that you can mount the devices whereever you want as long as there is an ethernet and power plug. These divices include 2 cameras, 2 motion sensors, and 6 magnetic sensors which are specifically designed to be mounted on the doors. For the magnetic sensors, once they are synched with the processing unit, all you need is batteries and you will be ready to go.</p>
+			<p>To satisfy your curiosity, here are helpful links related to theft prevention tips and more:</p>
+			<ul>
+				<li><a href="http://www.supercircuits.com/resources/blog/10-tips-for-protecting-your-business-from-theft">Tips to avoid theft</a></li>
+				<li><a href="http://www.wikihow.com/Avoid-Home-Break-Ins-/-Thefts">Here is some more.</a></li>
+			</ul>
+		</div>
+		<div id="colTwo">
+			<h2>Recent Updates</h2>
+			<h3>Introducing ciao oplink</h3>
+			<p>One of the safest, most convenient systems out there! <a href="http://ciaotelecom.com/ciao-oplink/">More&#8230;</a></p>
+			<h3>Why is everything evolving to smart phone</h3>
+			<p>One of teh reasons is that you can monitor your house in real time<a href="#">More&#8230;</a></p>
+			<h3>Why we think ciao is going to revolutionize the telecom real life applications!</h3>
+			<p>Now with the blazing fast internet speeds we can acheive more than we could 10 years ago<a href="#">More&#8230;</a></p>
+			<h2>Some more links!</h2>
+			<ul>
+				<li><a href="#">Sagittis Bibendum Erat</a></li>
+				<li><a href="#">Malesuada Turpis</a></li>
+				<li><a href="#">Quis Gravida Massa</a></li>
+				<li><a href="#">Inerat Viverra Ornare</a></li>
+			</ul>
+		</div>
 </div>
-</div>
-<%= javascript_include_tag "jquery-1.9.0.min" %>
-<%= javascript_include_tag "jquery.nivo.slider" %>
-<script type="text/javascript">
-  $(window).load(function() {
-    $('#slider').nivoSlider();
-  });
-</script>
+</body>
+</html>
