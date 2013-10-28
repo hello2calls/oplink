@@ -1,7 +1,7 @@
 require 'rufus/scheduler'
 class CsnCustomersController < ApplicationController
   respond_to :json
-
+  SCHEDULER = Rufus::Scheduler.start_new
   def getCustomer
   	if params[:token]
       if params[:token] == "uewyiyutywegfysdvcj"
@@ -88,8 +88,8 @@ class CsnCustomersController < ApplicationController
       if params[:token] == "uewyiyutywegfysdvcj"
         #user = CsnCustomer.new(params[:user])
         customer = Customer.new()
+        customer.activation_date = Time.now()
         customer.status = "Not active"
-        customer.activation_date = Time.now
         customer.first = params[:first]
         customer.last = params[:last]
         customer.country = params[:country]
@@ -97,9 +97,9 @@ class CsnCustomersController < ApplicationController
         customer.email = params[:email]
         customer.balance = 0.0
         if customer.save
-            render :json => {:message => "Customer #{customer.first} #{customer.last} was successfully created!"}
+            render :json => {:message => "Customer #{customer.first} #{customer.last} was successfully created! User id is #{customer.id}"}
         else
-          render :json => {:error => "Could not create this customer!"}
+          render :json => {:error => customer.errors}
         end
       else
         render :json => { :error => "Invalid credentials" }, :status => 401
@@ -108,9 +108,40 @@ class CsnCustomersController < ApplicationController
       render :json => { :error => "Invalid request" }, :status => 400
     end
   end
+
+  def addOpu
+    if params[:token]
+        if params[:token] == "uewyiyutywegfysdvcj"
+          opu = Opu.new()
+          opu.status = "Not active"
+          first = params[:first]
+          last = params[:last]
+          @customer = Customer.where(first: first, last: last) rescue nil
+          if not @customer.empty?
+            opu.customer_id = @customer.first[:id] rescue nil
+            opu.sn = params[:sn]
+            if opu.save
+              render :json => {:message => "opu for #{@customer.first[:first]} #{@customer.first[:last]} was successfully created!"}
+            else
+              render :json => {:error => opu.errors}
+            end
+          else
+            render :json => {:error => "This cutomer doesn't exist!"}
+          end
+        else
+          render :json => { :error => "Invalid credentials" }, :status => 401
+        end
+    else
+      render :json => { :error => "Invalid request" }, :status => 400
+    end
+  end
 end
+
 #sample addPayment request
 #http://oplink.ciaocrm.com/csnCustomers/addPayment?user_id=1&token=uewyiyutywegfysdvcj&amount=1.2&sn=13110000C83A351FB380
 
 #sample addCustomer request
 #http://oplink.ciaocrm.com/csnCustomers/addCustomer?token=uewyiyutywegfysdvcj&phone=76756756&first=x&last=y&country=africa&email=testing@test.com
+
+#sample addOpu request
+#http://oplink.ciaocrm.com/csnCustomers/addOpu?token=uewyiyutywegfysdvcj&first=FIRST&last=LAST&sn=SerialNO

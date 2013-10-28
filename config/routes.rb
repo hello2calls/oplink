@@ -1,4 +1,5 @@
 OplinkManagement::Application.routes.draw do
+  get "csnCustomers/addOpu"
   get "csnCustomers/addPayment" 
   get "csnCustomers/addCustomer" 
   get "csnCustomers/getCustomer"
