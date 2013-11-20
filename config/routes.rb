@@ -8,8 +8,9 @@ OplinkManagement::Application.routes.draw do
   post "payments/index"
   resources :payments
 
-  post "customer/payment_history"
+  post "customers/payment_history"
   get "customers/payment_history"
+  get "customers/index"
   resources :customers
 
 

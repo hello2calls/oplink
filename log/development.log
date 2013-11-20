@@ -11395,3 +11395,310 @@ Processing by CsnCustomersController#addPayment as HTML
   [1m[35mCustomer Exists (74.8ms)[0m  SELECT 1 AS one FROM `customers` WHERE (`customers`.`email` = BINARY 'aldizhupani@gmail.com' AND `customers`.`id` != 4) LIMIT 1
   [1m[36m (77.8ms)[0m  [1mCOMMIT[0m
 Completed 200 OK in 3026ms (Views: 0.2ms | ActiveRecord: 1940.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-09 20:28:12 -0600
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 13ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-09 20:28:14 -0600
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-11-09 20:28:14 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 878ms (Views: 384.1ms | ActiveRecord: 385.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-09 20:28:16 -0600
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-09 20:28:16 -0600
+Served asset /twitter/bootstrap.css - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-11-09 20:28:16 -0600
+Served asset /bootstrap.css - 200 OK (25ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-09 20:28:16 -0600
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-11-09 20:28:16 -0600
+Served asset /customers.css - 200 OK (1ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2013-11-09 20:28:16 -0600
+Served asset /nivo-slider.css - 200 OK (1ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2013-11-09 20:28:16 -0600
+Served asset /opus.css - 200 OK (1ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2013-11-09 20:28:16 -0600
+Served asset /payments.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:17 -0600
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:17 -0600
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:17 -0600
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:17 -0600
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:17 -0600
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:18 -0600
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:18 -0600
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:18 -0600
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:18 -0600
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:18 -0600
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:18 -0600
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:19 -0600
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:19 -0600
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:19 -0600
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:19 -0600
+Served asset /twitter/bootstrap.js - 200 OK (11ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:19 -0600
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:19 -0600
+Served asset /customers.js - 200 OK (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:19 -0600
+Served asset /home.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:20 -0600
+Served asset /jquery-1.9.0.min.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:20 -0600
+Served asset /jquery.nivo.slider.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:20 -0600
+Served asset /jquery.nivo.slider.pack.js - 200 OK (1ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:20 -0600
+Served asset /opus.js - 200 OK (1ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:20 -0600
+Served asset /payments.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-09 20:28:20 -0600
+Served asset /application.js - 200 OK (49ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-11-09 20:28:31 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kKxQO3oOR0LNVHBW6s57Y1HtgWH0gxgS4/IFvJ+GcXk=", "user"=>{"email"=>"aldi@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  [1m[36mUser Load (121.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'aldi@test.com' LIMIT 1[0m
+  [1m[35m (127.0ms)[0m  BEGIN
+  [1m[36m (721.4ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2013-11-09 17:41:38', `current_sign_in_at` = '2013-11-10 02:28:31', `last_sign_in_ip` = '64.134.29.108', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 42, `updated_at` = '2013-11-10 02:28:31' WHERE `users`.`id` = 1[0m
+  [1m[35m (159.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 1649ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-09 20:28:32 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (128.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 220ms (Views: 90.3ms | ActiveRecord: 128.5ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2013-11-09 20:28:33 -0600
+Served asset /ciao_oplink.png - 200 OK (45ms)
+
+
+Started GET "/customers/" for 127.0.0.1 at 2013-11-09 20:28:37 -0600
+Processing by CustomersController#index as HTML
+  [1m[35mUser Load (137.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (139.0ms)[0m  [1mSELECT `customers`.* FROM `customers` [0m
+  [1m[35mEXPLAIN (146.5ms)[0m  EXPLAIN SELECT `customers`.* FROM `customers` 
+EXPLAIN for: SELECT `customers`.* FROM `customers` 
++----+-------------+-----------+------+---------------+------+---------+------+------+-------+
+| id | select_type | table     | type | possible_keys | key  | key_len | ref  | rows | Extra |
++----+-------------+-----------+------+---------------+------+---------+------+------+-------+
+|  1 | SIMPLE      | customers | ALL  | NULL          | NULL | NULL    | NULL |    6 |       |
++----+-------------+-----------+------+---------------+------+---------+------+------+-------+
+1 row in set (0.15 sec)
+
+  Rendered customers/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 894ms (Views: 20.9ms | ActiveRecord: 843.0ms)
+
+
+Started GET "/customers/" for 127.0.0.1 at 2013-11-09 20:32:55 -0600
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (118.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (130.1ms)[0m  SELECT `customers`.* FROM `customers` 
+  [1m[36mEXPLAIN (130.2ms)[0m  [1mEXPLAIN SELECT `customers`.* FROM `customers` [0m
+EXPLAIN for: SELECT `customers`.* FROM `customers` 
++----+-------------+-----------+------+---------------+------+---------+------+------+-------+
+| id | select_type | table     | type | possible_keys | key  | key_len | ref  | rows | Extra |
++----+-------------+-----------+------+---------------+------+---------+------+------+-------+
+|  1 | SIMPLE      | customers | ALL  | NULL          | NULL | NULL    | NULL |    6 |       |
++----+-------------+-----------+------+---------------+------+---------+------+------+-------+
+1 row in set (0.13 sec)
+
+  Rendered customers/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 1333ms (Views: 20.1ms | ActiveRecord: 1211.2ms)
+
+
+Started GET "/customers/payment_history?id=4" for 127.0.0.1 at 2013-11-09 20:32:59 -0600
+Processing by CustomersController#payment_history as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (127.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (149.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mPayment Load (119.1ms)[0m  SELECT `payments`.* FROM `payments` WHERE `payments`.`customer_id` = 4
+  [1m[36mEXPLAIN (120.7ms)[0m  [1mEXPLAIN SELECT `payments`.* FROM `payments` WHERE `payments`.`customer_id` = 4[0m
+EXPLAIN for: SELECT `payments`.* FROM `payments`  WHERE `payments`.`customer_id` = 4
++----+-------------+----------+------+---------------+------+---------+------+------+-------------+
+| id | select_type | table    | type | possible_keys | key  | key_len | ref  | rows | Extra       |
++----+-------------+----------+------+---------------+------+---------+------+------+-------------+
+|  1 | SIMPLE      | payments | ALL  | NULL          | NULL | NULL    | NULL |   11 | Using where |
++----+-------------+----------+------+---------------+------+---------+------+------+-------------+
+1 row in set (0.12 sec)
+
+  Rendered customers/payment_history.html.erb within layouts/application (633.4ms)
+Completed 200 OK in 957ms (Views: 33.1ms | ActiveRecord: 889.1ms)
+
+
+Started GET "/opus/" for 127.0.0.1 at 2013-11-09 20:33:06 -0600
+Processing by OpusController#index as HTML
+  [1m[35mUser Load (125.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mOpu Load (137.9ms)[0m  [1mSELECT `opus`.* FROM `opus` [0m
+  [1m[35mEXPLAIN (132.5ms)[0m  EXPLAIN SELECT `opus`.* FROM `opus` 
+EXPLAIN for: SELECT `opus`.* FROM `opus` 
++----+-------------+-------+------+---------------+------+---------+------+------+-------+
+| id | select_type | table | type | possible_keys | key  | key_len | ref  | rows | Extra |
++----+-------------+-------+------+---------------+------+---------+------+------+-------+
+|  1 | SIMPLE      | opus  | ALL  | NULL          | NULL | NULL    | NULL |    3 |       |
++----+-------------+-------+------+---------------+------+---------+------+------+-------+
+1 row in set (0.13 sec)
+
+  [1m[36mCustomer Load (134.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCustomer Load (138.3ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 7 LIMIT 1[0m
+  Rendered opus/index.html.erb within layouts/application (280.2ms)
+Completed 200 OK in 1087ms (Views: 22.7ms | ActiveRecord: 1043.0ms)
+
+
+Started GET "/payments/" for 127.0.0.1 at 2013-11-09 20:33:24 -0600
+Processing by PaymentsController#index as HTML
+  [1m[35mUser Load (126.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPayment Load (122.7ms)[0m  [1mSELECT `payments`.* FROM `payments` ORDER BY date asc[0m
+  [1m[35mCustomer Load (137.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  Rendered payments/index.html.erb within layouts/application (413.5ms)
+Completed 200 OK in 486ms (Views: 65.1ms | ActiveRecord: 386.1ms)
+
+
+Started GET "/customers/" for 127.0.0.1 at 2013-11-09 20:33:26 -0600
+Processing by CustomersController#index as HTML
+  [1m[35mUser Load (117.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (140.2ms)[0m  [1mSELECT `customers`.* FROM `customers` [0m
+  Rendered customers/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 315ms (Views: 45.6ms | ActiveRecord: 257.6ms)
+
+
+Started GET "/customers/payment_history?id=4" for 127.0.0.1 at 2013-11-09 20:33:27 -0600
+Processing by CustomersController#payment_history as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (120.9ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (139.8ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mPayment Load (135.4ms)[0m  SELECT `payments`.* FROM `payments` WHERE `payments`.`customer_id` = 4
+  Rendered customers/payment_history.html.erb within layouts/application (144.9ms)
+Completed 200 OK in 420ms (Views: 21.7ms | ActiveRecord: 396.2ms)
+
+
+Started GET "/customers/payment_history?id=4" for 127.0.0.1 at 2013-11-09 20:36:49 -0600
+Processing by CustomersController#payment_history as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (128.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (133.3ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mPayment Load (126.0ms)[0m  [1mSELECT `payments`.* FROM `payments` WHERE `payments`.`customer_id` = 4[0m
+  [1m[35mEXPLAIN (146.9ms)[0m  EXPLAIN SELECT `payments`.* FROM `payments` WHERE `payments`.`customer_id` = 4
+EXPLAIN for: SELECT `payments`.* FROM `payments`  WHERE `payments`.`customer_id` = 4
++----+-------------+----------+------+---------------+------+---------+------+------+-------------+
+| id | select_type | table    | type | possible_keys | key  | key_len | ref  | rows | Extra       |
++----+-------------+----------+------+---------------+------+---------+------+------+-------------+
+|  1 | SIMPLE      | payments | ALL  | NULL          | NULL | NULL    | NULL |   11 | Using where |
++----+-------------+----------+------+---------------+------+---------+------+------+-------------+
+1 row in set (0.15 sec)
+
+  Rendered customers/payment_history.html.erb within layouts/application (745.5ms)
+Completed 200 OK in 1885ms (Views: 64.9ms | ActiveRecord: 1778.8ms)
