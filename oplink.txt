@@ -1,0 +1,34 @@
+Oplink
+oplink processing unit
+(smartphone talks to the cloud and the cloud talks to opu)
+
+Dongle
+(433 MHz Transceiver)
+
+Hub
+
+IP Camera(day/night vision if 4 corner lens are red)
+top right is the power
+right belowe it is the wireless status
+
+Magnetic Sensor Kit
+(magnetic seperation triger, need to correctly position it)
+
+Motion Detector
+Passive Infrared sensor(detects the changes in the environment's temperature)
+Detects any object of a decent size.
+
+Application
+Different tiles
+1. FOr video surveylance
+
+2. Green multishare vidoegram button in the upper right
+
+Authorization header
+====================
+C4miforciao2013
+
+Opu number
+===============
+ours: 13110000C83A351FB380
+theirs: 10110000C83A3531D808

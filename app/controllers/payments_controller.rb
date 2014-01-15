@@ -17,6 +17,9 @@ class PaymentsController < ApplicationController
     @from_date = @from_date.strftime("%Y-%m-%d") + ' 00:00:00'
     @to_date = @to_date.strftime("%Y-%m-%d") + ' 23:59:59'
     if params['viewFrom'] and params['viewTo']
+      puts "DATEEEEE"
+      puts @from_date.to_datetime
+      puts @to_date.to_datetime
       #@payments = ActiveRecord::Base.connection.execute("SELECT * FROM payments WHERE date between '#{@from_date}' and  '#{@to_date}'")
       @payments = Payment.where(date: (@from_date.to_datetime..@to_date.to_datetime))
     else
@@ -116,8 +119,8 @@ class PaymentsController < ApplicationController
   end
 
   def destroy
+    @payment = Payment.find(params[:id])
     @payment.destroy
-
     respond_to do |format|
       format.html { redirect_to payments_url }
       format.json { head :no_content }

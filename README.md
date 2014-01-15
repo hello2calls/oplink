@@ -65,3 +65,11 @@ Created Json API to communicate with csn to add customers
 Used Savon Client to communicate with oplink API to send activation/deactivation requests and get info about a particular device
 Twitter bootsrap for the views with some customizations
 Devise for authentication with signup limited to only admins
+
+A word about the css, nivo slider
+=================================
+Be sure to add this line in application.rb and set assets.compile to true in production.rb
+config.assets.precompile += ['locales/*.css.scss']
+Besides the other configuration details gemfile, application.css and application.js this will
+allow for the compilation to be when you load the application.
+*If you run into trouble run rake tmp:cache:clear and rake assets:clean to clear out the preloaded css.
