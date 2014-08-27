@@ -30672,3 +30672,2586 @@ Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-15 12:45:10 -0600
 Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-23 15:09:28 -0600
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 13ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-23 15:09:32 -0600
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-23 15:09:32 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (53.2ms)
+Completed 200 OK in 1049ms (Views: 510.4ms | ActiveRecord: 169.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-23 15:09:33 -0600
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-01-23 15:09:33 -0600
+Served asset /customers.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-23 15:09:33 -0600
+Served asset /bootstrap_and_overrides.css - 200 OK (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /nivo-slider.css - 200 OK (1ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /opus.css - 200 OK (1ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /payments.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /jquery.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /customers.js - 200 OK (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /home.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /jquery-1.9.0.min.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /jquery.nivo.slider.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /jquery.nivo.slider.pack.js - 200 OK (1ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /opus.js - 200 OK (1ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /payments.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-23 15:09:34 -0600
+Served asset /application.js - 200 OK (9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-23 15:18:02 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-23 15:18:18 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OkGG9vEmFTIPNAtQxR/EM/+AqOPzh7fNvc/jEKz5LwA=", "user"=>{"email"=>"aldi@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  [1m[36mUser Load (49.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'aldi@test.com' LIMIT 1[0m
+  [1m[35m (47.5ms)[0m  BEGIN
+  [1m[36m (162.5ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2014-01-15 18:20:19', `current_sign_in_at` = '2014-01-23 21:18:19', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 61, `updated_at` = '2014-01-23 21:18:19' WHERE `users`.`id` = 1[0m
+  [1m[35m (90.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 1166ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-23 15:18:19 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (48.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (140.4ms)
+Completed 200 OK in 199ms (Views: 149.5ms | ActiveRecord: 48.1ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-01-23 15:18:20 -0600
+Served asset /ciao_oplink.png - 200 OK (51ms)
+
+
+Started POST "/home/showCustomer" for 127.0.0.1 at 2014-01-23 15:18:27 -0600
+Processing by HomeController#showCustomer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y1xgfDmrjBJIHw7SXRxPMeAaT8+h47aafair/tKRRAo=", "search"=>{"value"=>"1"}, "input"=>"axaX", "commit"=>"Search"}
+  [1m[35mUser Load (46.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (46.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`first` = 'axaX' AND `customers`.`last` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 271ms (ActiveRecord: 238.8ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-01-23 15:18:27 -0600
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (46.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 57ms (Views: 9.7ms | ActiveRecord: 46.2ms)
+
+
+Started POST "/home/showCustomer" for 127.0.0.1 at 2014-01-23 15:18:38 -0600
+Processing by HomeController#showCustomer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y1xgfDmrjBJIHw7SXRxPMeAaT8+h47aafair/tKRRAo=", "search"=>{"value"=>"1"}, "input"=>"QWSWQDWQ", "commit"=>"Search"}
+  [1m[36mUser Load (48.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (46.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`first` = 'QWSWQDWQ' AND `customers`.`last` IS NULL LIMIT 1
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 96ms (ActiveRecord: 94.1ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-01-23 15:18:38 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (46.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 123ms (Views: 75.4ms | ActiveRecord: 46.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-01-23 15:18:43 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y1xgfDmrjBJIHw7SXRxPMeAaT8+h47aafair/tKRRAo="}
+  [1m[35mUser Load (49.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (45.7ms)[0m  [1mBEGIN[0m
+  [1m[35m (48.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 179ms (ActiveRecord: 143.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-23 15:18:44 -0600
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-23 15:18:44 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-23 15:26:32 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (107.3ms)
+Completed 200 OK in 786ms (Views: 459.1ms | ActiveRecord: 216.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-23 15:26:40 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-23 15:26:53 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zhvl2VUrfIJJghWqa8pV92Bgg0sUeeG/j5wWB762WOE=", "user"=>{"email"=>"aldi@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  [1m[36mUser Load (65.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'aldi@test.com' LIMIT 1[0m
+  [1m[35m (82.9ms)[0m  BEGIN
+  [1m[36m (87.9ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2014-01-23 21:18:19', `current_sign_in_at` = '2014-01-23 21:26:53', `last_sign_in_ip` = '127.0.0.1', `sign_in_count` = 62, `updated_at` = '2014-01-23 21:26:53' WHERE `users`.`id` = 1[0m
+  [1m[35m (137.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 591ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-23 15:26:54 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (62.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 122ms (Views: 58.1ms | ActiveRecord: 62.2ms)
+
+
+Started POST "/home/showCustomer" for 127.0.0.1 at 2014-01-23 15:26:59 -0600
+Processing by HomeController#showCustomer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7SliaI9Dwg7rnNtBDrbYVw81zUJCuRcLKK7SFp12TFQ=", "search"=>{"value"=>"1"}, "input"=>"axas", "commit"=>"Search"}
+  [1m[35mUser Load (43.9ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (83.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`first` = 'axas' AND `customers`.`last` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 329ms (ActiveRecord: 271.5ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-01-23 15:26:59 -0600
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (44.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 56ms (Views: 10.3ms | ActiveRecord: 44.0ms)
+
+
+Started POST "/home/showCustomer" for 127.0.0.1 at 2014-01-23 15:27:06 -0600
+Processing by HomeController#showCustomer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7SliaI9Dwg7rnNtBDrbYVw81zUJCuRcLKK7SFp12TFQ=", "search"=>{"value"=>"1"}, "input"=>"aldi zhupani", "commit"=>"Search"}
+  [1m[36mUser Load (93.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (66.7ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`first` = 'aldi' AND `customers`.`last` = 'zhupani' LIMIT 1
+Redirected to http://localhost:3000/customers/4
+Completed 302 Found in 241ms (ActiveRecord: 159.8ms)
+
+
+Started GET "/customers/4" for 127.0.0.1 at 2014-01-23 15:27:07 -0600
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (81.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (140.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mOpu Load (73.2ms)[0m  [1mSELECT `opus`.* FROM `opus` WHERE `opus`.`customer_id` = 4[0m
+  Rendered customers/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 685ms (Views: 38.2ms | ActiveRecord: 599.6ms)
+
+
+Started GET "/customers/" for 127.0.0.1 at 2014-01-23 15:27:12 -0600
+Processing by CustomersController#index as HTML
+  [1m[35mUser Load (90.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (67.9ms)[0m  [1mSELECT `customers`.* FROM `customers` [0m
+  Rendered customers/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 215ms (Views: 45.8ms | ActiveRecord: 158.0ms)
+
+
+Started GET "/payments/" for 127.0.0.1 at 2014-01-23 15:27:13 -0600
+Processing by PaymentsController#index as HTML
+  [1m[35mUser Load (45.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPayment Load (45.1ms)[0m  [1mSELECT `payments`.* FROM `payments` ORDER BY date asc[0m
+  [1m[35mCustomer Load (45.3ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  Rendered payments/index.html.erb within layouts/application (158.9ms)
+Completed 200 OK in 354ms (Views: 48.4ms | ActiveRecord: 270.8ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-01-23 15:27:15 -0600
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (46.9ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 59ms (Views: 10.9ms | ActiveRecord: 46.9ms)
+
+
+Started GET "/opus/" for 127.0.0.1 at 2014-01-23 15:27:19 -0600
+Processing by OpusController#index as HTML
+  [1m[36mUser Load (44.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mOpu Load (50.4ms)[0m  SELECT `opus`.* FROM `opus` 
+  [1m[36mCustomer Load (45.4ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  Rendered opus/index.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 192ms (Views: 41.3ms | ActiveRecord: 140.1ms)
+
+
+Started GET "/home/getOpuInfo" for 127.0.0.1 at 2014-01-23 15:27:20 -0600
+Processing by HomeController#getOpuInfo as HTML
+  [1m[35mUser Load (74.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/getOpuInfo.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 96ms (Views: 19.5ms | ActiveRecord: 74.2ms)
+
+
+Started GET "/home/reports" for 127.0.0.1 at 2014-01-23 15:27:21 -0600
+Processing by HomeController#reports as HTML
+  [1m[36mUser Load (117.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (73.6ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`status` = 'Active'
+  Rendered home/reports.html.erb within layouts/application (76.3ms)
+Completed 200 OK in 220ms (Views: 26.3ms | ActiveRecord: 191.2ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-01-23 15:27:28 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (63.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 75ms (Views: 10.7ms | ActiveRecord: 63.2ms)
+
+
+Started GET "/opus/" for 127.0.0.1 at 2014-01-23 15:27:45 -0600
+Processing by OpusController#index as HTML
+  [1m[35mUser Load (54.9ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mOpu Load (61.4ms)[0m  [1mSELECT `opus`.* FROM `opus` [0m
+  [1m[35mCustomer Load (72.3ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  Rendered opus/index.html.erb within layouts/application (75.2ms)
+Completed 200 OK in 238ms (Views: 38.6ms | ActiveRecord: 188.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-01-23 15:28:05 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7SliaI9Dwg7rnNtBDrbYVw81zUJCuRcLKK7SFp12TFQ="}
+  [1m[36mUser Load (43.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (43.4ms)[0m  BEGIN
+  [1m[36m (44.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 166ms (ActiveRecord: 131.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-23 15:28:05 -0600
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-23 15:28:05 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 84ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-23 15:28:12 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-23 15:31:46 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:24:16 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 46ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-04-15 20:24:17 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (25.9ms)
+Compiled application.css  (2ms)  (pid 9548)
+Completed 200 OK in 913ms (Views: 615.7ms | ActiveRecord: 191.0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:18 -0500
+Served asset /customers.css - 200 OK (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:18 -0500
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:18 -0500
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:18 -0500
+Served asset /nivo-slider.css - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:18 -0500
+Served asset /bootstrap_and_overrides.css - 200 OK (1ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:18 -0500
+Served asset /opus.css - 200 OK (1ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:19 -0500
+Served asset /payments.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:19 -0500
+Served asset /jquery.js - 200 OK (45ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:19 -0500
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:19 -0500
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:19 -0500
+Served asset /customers.js - 200 OK (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:19 -0500
+Served asset /home.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:19 -0500
+Served asset /jquery-1.9.0.min.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:19 -0500
+Served asset /jquery.nivo.slider.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:19 -0500
+Served asset /jquery.nivo.slider.pack.js - 200 OK (1ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:19 -0500
+Served asset /opus.js - 200 OK (1ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:19 -0500
+Served asset /payments.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:19 -0500
+Served asset /application.js - 200 OK (34ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-04-15 20:24:23 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:23 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:23 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:23 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:23 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:23 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:23 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:23 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:23 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:23 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:24 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:24 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:24 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:24 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:24 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:24 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:24 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:24 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-04-15 20:24:37 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IFdQkvCdYgR9DSVIwJZ9FGhMT1bfrXvaNPYwa2+kQPc=", "user"=>{"email"=>"aldi@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  [1m[36mUser Load (97.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'aldi@test.com' LIMIT 1[0m
+  [1m[35m (57.7ms)[0m  BEGIN
+  [1m[36m (85.3ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2014-04-16 01:06:22', `current_sign_in_at` = '2014-04-16 01:24:37', `last_sign_in_ip` = '76.187.99.185', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 65, `updated_at` = '2014-04-16 01:24:37' WHERE `users`.`id` = 1[0m
+  [1m[35m (113.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 565ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:24:37 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (59.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 153ms (Views: 92.7ms | ActiveRecord: 59.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:40 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:40 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:40 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:40 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:40 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:40 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:24:40 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:40 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:40 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:40 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:40 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:41 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:41 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:41 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:41 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:41 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:41 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:24:41 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/glyphicons-halflings.png" for 127.0.0.1 at 2014-04-15 20:24:41 -0500
+Served asset /twitter/bootstrap/glyphicons-halflings.png - 200 OK (20ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:24:41 -0500
+Served asset /ciao_oplink.png - 200 OK (39ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:25:01 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (59.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 71ms (Views: 10.2ms | ActiveRecord: 59.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:01 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:01 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:01 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:01 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:01 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:01 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:01 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:02 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:02 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:02 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:02 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:02 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:02 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:02 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:02 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:02 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:02 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:02 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:25:02 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:25:05 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:25:10 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:25:12 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:25:13 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:25:15 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:25:16 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:25:18 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:25:19 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:25:21 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:25:24 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (60.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.7ms)
+Compiled application.css  (1ms)  (pid 9548)
+Completed 200 OK in 127ms (Views: 64.8ms | ActiveRecord: 60.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:24 -0500
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:24 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:24 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:24 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:24 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:24 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:25:24 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:24 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:24 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:24 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:25 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:25 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:25 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:25 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:25 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:25 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:25:25 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:25:25 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:25:34 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:25:36 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:27:06 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (64.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.7ms)
+Compiled application.css  (2ms)  (pid 9548)
+Completed 200 OK in 239ms (Views: 174.1ms | ActiveRecord: 64.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:06 -0500
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:06 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:06 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:06 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /opus.css - 200 OK (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /payments.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/glyphicons-halflings.png" for 127.0.0.1 at 2014-04-15 20:27:07 -0500
+Served asset /twitter/bootstrap/glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:27:08 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:27:11 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (54.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 64ms (Views: 9.0ms | ActiveRecord: 54.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:11 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:11 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:11 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:11 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:11 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:11 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:11 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:11 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:11 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:11 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:11 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:11 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:12 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:12 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:12 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:12 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:12 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:12 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:27:12 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:27:41 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (55.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Compiled application.css  (1ms)  (pid 9548)
+Completed 200 OK in 112ms (Views: 54.8ms | ActiveRecord: 55.8ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:41 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:41 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:41 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:41 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:41 -0500
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:41 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:27:41 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:41 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:41 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:41 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:41 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:42 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:42 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:42 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:42 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:42 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:42 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:27:42 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:27:42 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:27:43 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (56.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 68ms (Views: 10.9ms | ActiveRecord: 56.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:27:52 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (55.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 67ms (Views: 10.5ms | ActiveRecord: 55.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:28:00 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (60.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 71ms (Views: 10.2ms | ActiveRecord: 60.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:28:06 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (72.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 84ms (Views: 10.2ms | ActiveRecord: 72.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:28:06 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (83.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 96ms (Views: 11.4ms | ActiveRecord: 83.2ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-04-15 20:28:07 -0500
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:28:14 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (64.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 77ms (Views: 11.1ms | ActiveRecord: 64.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:14 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:14 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:14 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:14 -0500
+Served asset /opus.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:14 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:14 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2014-04-15 20:28:15 -0500
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (56.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (60.2ms)[0m  SELECT `customers`.* FROM `customers` 
+  Rendered customers/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 330ms (Views: 12.1ms | ActiveRecord: 290.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:16 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:16 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:16 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:16 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:16 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:16 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:16 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:16 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:17 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:17 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:17 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:17 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:17 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:17 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:17 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:17 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:17 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:17 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-04-15 20:28:23 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (60.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 74ms (Views: 11.7ms | ActiveRecord: 60.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:23 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:23 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /opus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:28:24 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:25 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:32 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:33 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:35 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:35 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:37 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:38 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:40 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:41 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:44 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:45 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:48 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:50 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:51 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:53 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:54 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:56 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:57 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:28:59 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:00 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:02 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:03 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:05 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-04-15 20:29:05 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (61.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Compiled application.css  (1ms)  (pid 9548)
+Completed 200 OK in 86ms (Views: 22.6ms | ActiveRecord: 61.8ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:29:06 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:29:07 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:29:07 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:07 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:13 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:15 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:16 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:18 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:19 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:19 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.min.map" for 127.0.0.1 at 2014-04-15 20:29:19 -0500
+Served asset /jquery.min.map - 200 OK (32ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2014-04-15 20:29:19 -0500
+Served asset /jquery.js - 200 OK (47ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:21 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:22 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:24 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:25 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:27 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:28 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:30 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:31 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:33 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:34 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:36 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:37 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:39 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:40 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:42 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:43 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:45 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:46 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:48 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:49 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:51 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:53 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:56 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:58 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:29:59 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:01 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:02 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:04 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:05 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:07 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:08 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:10 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:11 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:13 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:14 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:16 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:17 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:19 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:20 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:22 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:23 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:25 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:26 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:28 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:29 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-04-15 20:30:31 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (60.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Compiled home.css  (146ms)  (pid 9548)
+Compiled application.css  (1ms)  (pid 9548)
+Completed 200 OK in 343ms (Views: 281.4ms | ActiveRecord: 60.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:30:31 -0500
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:30:31 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:30:31 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:30:31 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /opus.css - 200 OK (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:32 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:41 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:43 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:45 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:48 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:50 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:51 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-04-15 20:30:51 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (59.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+Compiled home.css  (23ms)  (pid 9548)
+Compiled application.css  (2ms)  (pid 9548)
+Completed 200 OK in 245ms (Views: 183.7ms | ActiveRecord: 59.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:30:52 -0500
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:30:52 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:30:52 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:30:52 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:30:52 -0500
+Served asset /home.css - 200 OK (2ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:30:52 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:52 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:52 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:52 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:52 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:52 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:52 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:52 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:53 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:53 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:53 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:30:53 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/app/assets/images/ciao.jpg" for 127.0.0.1 at 2014-04-15 20:30:53 -0500
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/ciao.jpg"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:53 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:30:59 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:00 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:02 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:13 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:15 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:18 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:20 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:21 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:23 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:24 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:26 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:27 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:29 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:30 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:32 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:33 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:35 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:36 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:38 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:39 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:41 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:42 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:44 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:45 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:47 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:48 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:50 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:51 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:53 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:54 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:56 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:31:58 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:32:01 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:32:03 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:32:04 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:32:06 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-04-15 20:32:08 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (60.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Compiled home.css  (27ms)  (pid 9548)
+Compiled application.css  (2ms)  (pid 9548)
+Completed 200 OK in 304ms (Views: 241.9ms | ActiveRecord: 60.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:32:08 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:32:08 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:32:08 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:32:08 -0500
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:32:08 -0500
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:32:09 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:32:09 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:32:09 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:32:09 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:32:09 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:32:09 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:32:09 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:32:09 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:32:09 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:32:09 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:32:09 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:32:09 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:32:09 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:32:13 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-04-15 20:32:21 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (59.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 71ms (Views: 10.5ms | ActiveRecord: 59.2ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2014-04-15 20:35:52 -0500
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (58.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (69.7ms)[0m  SELECT `customers`.* FROM `customers` 
+  Rendered customers/index.html.erb within layouts/application (4.3ms)
+Compiled home.css  (8ms)  (pid 9548)
+Compiled application.css  (2ms)  (pid 9548)
+Completed 200 OK in 237ms (Views: 97.2ms | ActiveRecord: 128.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:35:53 -0500
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:35:53 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:35:53 -0500
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:35:53 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:35:53 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:35:53 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:35:53 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:35:53 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:35:53 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:35:53 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:35:53 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:35:53 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:35:54 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:35:54 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:35:54 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:35:54 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:35:54 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home/getOpuInfo" for 127.0.0.1 at 2014-04-15 20:36:01 -0500
+Processing by HomeController#getOpuInfo as HTML
+  [1m[36mUser Load (57.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/getOpuInfo.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 102ms (Views: 42.3ms | ActiveRecord: 57.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:36:01 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:36:01 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:36:01 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:01 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:36:01 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:36:02 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:02 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:02 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:02 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:02 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:02 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:02 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:02 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:02 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:02 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:02 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-04-15 20:36:04 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (57.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 69ms (Views: 10.3ms | ActiveRecord: 57.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-04-15 20:36:21 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (60.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 71ms (Views: 9.4ms | ActiveRecord: 60.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-04-15 20:36:25 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Yguufx24+c9TICVnURbvYhPNZ+5lKiZ2l/t9LocnkaM="}
+  [1m[35mUser Load (59.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (59.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (53.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 243ms (ActiveRecord: 171.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:36:25 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-04-15 20:36:25 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:36:25 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:36:25 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:36:25 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:36:26 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-04-15 20:37:16 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:37:16 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:37:16 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:37:16 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:37:16 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:37:16 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:37:16 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:17 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:17 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:17 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:17 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:17 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:17 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:17 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:17 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:17 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:17 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:17 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-04-15 20:37:27 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZyOjsbt6bEwf1qAaWWP+L0ST2KanaV2LxGMRBaD+fY=", "user"=>{"email"=>"aldi@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  [1m[36mUser Load (62.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'aldi@test.com' LIMIT 1[0m
+  [1m[35m (58.4ms)[0m  BEGIN
+  [1m[36m (59.4ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2014-04-16 01:24:37', `current_sign_in_at` = '2014-04-16 01:37:27', `last_sign_in_ip` = '127.0.0.1', `sign_in_count` = 66, `updated_at` = '2014-04-16 01:37:27' WHERE `users`.`id` = 1[0m
+  [1m[35m (102.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 362ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-15 20:37:27 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (79.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 91ms (Views: 10.3ms | ActiveRecord: 79.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /nivo-slider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /payments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:28 -0500
+Served asset /opus.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:29 -0500
+Served asset /payments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-15 20:37:29 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:37:29 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:37:33 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:37:34 -0500
+Served asset /ciao_oplink.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
