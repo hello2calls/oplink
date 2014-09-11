@@ -33255,3 +33255,406 @@ Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-04-15 20:37:34 -0500
 Served asset /ciao_oplink.png - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 13:18:39 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 4.6ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-09-11 13:18:40 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (7.2ms)
+Compiled jquery.js  (4ms)  (pid 8821)
+Compiled jquery_ujs.js  (0ms)  (pid 8821)
+Compiled application.js  (142ms)  (pid 8821)
+Completed 200 OK in 989.5ms (Views: 735.0ms | ActiveRecord: 157.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 13:18:41 -0500
+Served asset /application.css - 200 OK (9ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /customers.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /bootstrap_and_overrides.css - 200 OK (1ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /opus.css - 200 OK (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /home.css - 200 OK (2ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /nivo-slider.css - 200 OK (2ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /payments.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /bootstrap.js - 200 OK (2ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /customers.js - 200 OK (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /home.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /jquery-1.9.0.min.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /jquery.nivo.slider.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /jquery.nivo.slider.pack.js - 200 OK (1ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-09-11 13:18:42 -0500
+Served asset /opus.js - 200 OK (1ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-09-11 13:18:43 -0500
+Served asset /payments.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 13:18:43 -0500
+Served asset /application.js - 200 OK (12ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-09-11 13:18:54 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TgsffsDKz5tb5XVdLQwKV6o91Xi4KsVNHa427z3QwWY=", "user"=>{"email"=>"aldi@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  [1m[36mUser Load (52.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'aldi@test.com' LIMIT 1[0m
+  [1m[35m (56.5ms)[0m  BEGIN
+  [1m[36m (52.0ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2014-04-16 13:49:10', `current_sign_in_at` = '2014-09-11 18:18:54', `last_sign_in_ip` = '50.84.4.2', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 68, `updated_at` = '2014-09-11 18:18:54' WHERE `users`.`id` = 1[0m
+  [1m[35m (92.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 1232.5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 13:18:55 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (73.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (103.7ms)
+Completed 200 OK in 205.9ms (Views: 131.3ms | ActiveRecord: 73.3ms)
+
+
+Started GET "/assets/ciao_oplink.png" for 127.0.0.1 at 2014-09-11 13:19:01 -0500
+Served asset /ciao_oplink.png - 200 OK (81ms)
+
+
+Started POST "/home/showCustomer" for 127.0.0.1 at 2014-09-11 13:19:24 -0500
+Processing by HomeController#showCustomer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2b6vhgChFKYztR/rx+j/PX1MULo5/utIkTPkDGCkCjE=", "search"=>{"value"=>"1"}, "input"=>"Aldi", "commit"=>"Search"}
+  [1m[35mUser Load (54.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (52.3ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`first` = 'Aldi' AND `customers`.`last` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 287.6ms (ActiveRecord: 270.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-09-11 13:19:24 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (52.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 87.7ms (Views: 34.3ms | ActiveRecord: 52.4ms)
+
+
+Started POST "/home/showCustomer" for 127.0.0.1 at 2014-09-11 13:19:33 -0500
+Processing by HomeController#showCustomer as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2b6vhgChFKYztR/rx+j/PX1MULo5/utIkTPkDGCkCjE=", "search"=>{"value"=>"1"}, "input"=>"Aldi Zhupani", "commit"=>"Search"}
+  [1m[36mUser Load (57.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (54.7ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`first` = 'Aldi' AND `customers`.`last` = 'Zhupani' LIMIT 1
+Redirected to http://localhost:3000/customers/4
+Completed 302 Found in 188.5ms (ActiveRecord: 112.5ms)
+
+
+Started GET "/customers/4" for 127.0.0.1 at 2014-09-11 13:19:34 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (52.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (59.5ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mOpu Load (56.8ms)[0m  [1mSELECT `opus`.* FROM `opus` WHERE `opus`.`customer_id` = 4[0m
+  Rendered customers/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 412.8ms (Views: 43.7ms | ActiveRecord: 336.6ms)
+
+
+Started GET "/customers/" for 127.0.0.1 at 2014-09-11 13:19:45 -0500
+Processing by CustomersController#index as HTML
+  [1m[35mUser Load (53.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (52.3ms)[0m  [1mSELECT `customers`.* FROM `customers` [0m
+  Rendered customers/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 180.5ms (Views: 37.2ms | ActiveRecord: 105.3ms)
+
+
+Started GET "/payments/" for 127.0.0.1 at 2014-09-11 13:19:46 -0500
+Processing by PaymentsController#index as HTML
+  [1m[35mUser Load (52.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPayment Load (52.2ms)[0m  [1mSELECT `payments`.* FROM `payments` ORDER BY date asc[0m
+  [1m[35mCustomer Load (53.8ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  Rendered payments/index.html.erb within layouts/application (181.6ms)
+Completed 200 OK in 391.0ms (Views: 52.6ms | ActiveRecord: 317.4ms)
+
+
+Started GET "/opus/" for 127.0.0.1 at 2014-09-11 13:19:47 -0500
+Processing by OpusController#index as HTML
+  [1m[35mUser Load (52.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mOpu Load (51.9ms)[0m  [1mSELECT `opus`.* FROM `opus` [0m
+  [1m[35mCustomer Load (55.3ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  Rendered opus/index.html.erb within layouts/application (59.5ms)
+Completed 200 OK in 210.8ms (Views: 41.0ms | ActiveRecord: 159.5ms)
+
+
+Started GET "/home/getOpuInfo" for 127.0.0.1 at 2014-09-11 13:19:48 -0500
+Processing by HomeController#getOpuInfo as HTML
+  [1m[36mUser Load (55.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/getOpuInfo.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 90.7ms (Views: 34.3ms | ActiveRecord: 55.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-09-11 13:19:51 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (56.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 87.4ms (Views: 29.7ms | ActiveRecord: 56.4ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-09-11 13:19:53 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (52.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 85.7ms (Views: 31.6ms | ActiveRecord: 52.3ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-09-11 13:20:24 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (90.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 130.7ms (Views: 39.2ms | ActiveRecord: 90.4ms)
+
+
+Started GET "/home/getOpuInfo" for 127.0.0.1 at 2014-09-11 13:20:26 -0500
+Processing by HomeController#getOpuInfo as HTML
+  [1m[36mUser Load (52.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/getOpuInfo.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 106.1ms (Views: 52.5ms | ActiveRecord: 52.3ms)
+
+
+Started GET "/home/reports" for 127.0.0.1 at 2014-09-11 13:20:28 -0500
+Processing by HomeController#reports as HTML
+  [1m[35mUser Load (52.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (52.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`status` = 'Active'[0m
+  Rendered home/reports.html.erb within layouts/application (54.4ms)
+Completed 200 OK in 148.0ms (Views: 41.7ms | ActiveRecord: 104.3ms)
+
+
+Started GET "/customers/4" for 127.0.0.1 at 2014-09-11 13:20:32 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (57.9ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (52.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mOpu Load (51.9ms)[0m  SELECT `opus`.* FROM `opus` WHERE `opus`.`customer_id` = 4
+  Rendered customers/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 215.7ms (Views: 43.9ms | ActiveRecord: 162.0ms)
+
+
+Started GET "/payments/" for 127.0.0.1 at 2014-09-11 13:20:35 -0500
+Processing by PaymentsController#index as HTML
+  [1m[36mUser Load (52.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPayment Load (52.0ms)[0m  SELECT `payments`.* FROM `payments` ORDER BY date asc
+  [1m[36mCustomer Load (51.9ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  Rendered payments/index.html.erb within layouts/application (171.8ms)
+Completed 200 OK in 181.4ms (Views: 24.7ms | ActiveRecord: 156.3ms)
+
+
+Started GET "/home/getOpuInfo" for 127.0.0.1 at 2014-09-11 13:20:36 -0500
+Processing by HomeController#getOpuInfo as HTML
+  [1m[36mUser Load (53.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/getOpuInfo.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 65.2ms (Views: 10.8ms | ActiveRecord: 53.4ms)
+
+
+Started GET "/home/reports" for 127.0.0.1 at 2014-09-11 13:20:37 -0500
+Processing by HomeController#reports as HTML
+  [1m[35mUser Load (52.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (52.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`status` = 'Active'[0m
+  Rendered home/reports.html.erb within layouts/application (54.2ms)
+Completed 200 OK in 115.8ms (Views: 9.9ms | ActiveRecord: 104.6ms)
+
+
+Started GET "/home/getOpuInfo" for 127.0.0.1 at 2014-09-11 13:20:38 -0500
+Processing by HomeController#getOpuInfo as HTML
+  [1m[35mUser Load (55.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/getOpuInfo.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 68.4ms (Views: 12.2ms | ActiveRecord: 55.2ms)
+
+
+Started GET "/opus/" for 127.0.0.1 at 2014-09-11 13:20:39 -0500
+Processing by OpusController#index as HTML
+  [1m[36mUser Load (52.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mOpu Load (55.3ms)[0m  SELECT `opus`.* FROM `opus` 
+  [1m[36mCustomer Load (52.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  Rendered opus/index.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 218.7ms (Views: 49.9ms | ActiveRecord: 159.7ms)
+
+
+Started GET "/payments/" for 127.0.0.1 at 2014-09-11 13:20:40 -0500
+Processing by PaymentsController#index as HTML
+  [1m[35mUser Load (86.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPayment Load (78.3ms)[0m  [1mSELECT `payments`.* FROM `payments` ORDER BY date asc[0m
+  [1m[35mCustomer Load (79.3ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  Rendered payments/index.html.erb within layouts/application (267.4ms)
+Completed 200 OK in 277.9ms (Views: 34.0ms | ActiveRecord: 243.7ms)
+
+
+Started GET "/customers/" for 127.0.0.1 at 2014-09-11 13:20:41 -0500
+Processing by CustomersController#index as HTML
+  [1m[35mUser Load (53.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (55.8ms)[0m  [1mSELECT `customers`.* FROM `customers` [0m
+  Rendered customers/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 134.4ms (Views: 15.8ms | ActiveRecord: 109.1ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-09-11 13:20:42 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (52.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 83.9ms (Views: 30.4ms | ActiveRecord: 52.3ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-09-11 13:20:43 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (52.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 64.0ms (Views: 10.6ms | ActiveRecord: 52.3ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-09-11 13:20:51 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (52.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 66.7ms (Views: 13.0ms | ActiveRecord: 52.6ms)
+
+
+Started GET "/customers/" for 127.0.0.1 at 2014-09-11 13:20:55 -0500
+Processing by CustomersController#index as HTML
+  [1m[36mUser Load (52.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (52.3ms)[0m  SELECT `customers`.* FROM `customers` 
+  Rendered customers/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 127.5ms (Views: 13.3ms | ActiveRecord: 104.8ms)
+
+
+Started GET "/payments/" for 127.0.0.1 at 2014-09-11 13:20:56 -0500
+Processing by PaymentsController#index as HTML
+  [1m[36mUser Load (52.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPayment Load (52.2ms)[0m  SELECT `payments`.* FROM `payments` ORDER BY date asc
+  [1m[36mCustomer Load (52.3ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1
+  Rendered payments/index.html.erb within layouts/application (170.0ms)
+Completed 200 OK in 180.3ms (Views: 23.1ms | ActiveRecord: 156.9ms)
+
+
+Started GET "/opus/" for 127.0.0.1 at 2014-09-11 13:20:56 -0500
+Processing by OpusController#index as HTML
+  [1m[36mUser Load (52.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mOpu Load (63.0ms)[0m  SELECT `opus`.* FROM `opus` 
+  [1m[36mCustomer Load (54.4ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  Rendered opus/index.html.erb within layouts/application (56.8ms)
+Completed 200 OK in 191.5ms (Views: 12.1ms | ActiveRecord: 169.9ms)
+
+
+Started GET "/home/getOpuInfo" for 127.0.0.1 at 2014-09-11 13:20:57 -0500
+Processing by HomeController#getOpuInfo as HTML
+  [1m[35mUser Load (52.9ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/getOpuInfo.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 64.7ms (Views: 10.4ms | ActiveRecord: 52.9ms)
+
+
+Started GET "/opus/" for 127.0.0.1 at 2014-09-11 13:20:58 -0500
+Processing by OpusController#index as HTML
+  [1m[36mUser Load (53.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mOpu Load (56.2ms)[0m  SELECT `opus`.* FROM `opus` 
+  [1m[36mCustomer Load (52.3ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  Rendered opus/index.html.erb within layouts/application (55.3ms)
+Completed 200 OK in 184.9ms (Views: 13.4ms | ActiveRecord: 161.8ms)
+
+
+Started GET "/home/reports" for 127.0.0.1 at 2014-09-11 13:20:59 -0500
+Processing by HomeController#reports as HTML
+  [1m[35mUser Load (52.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (52.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`status` = 'Active'[0m
+  Rendered home/reports.html.erb within layouts/application (53.8ms)
+Completed 200 OK in 115.5ms (Views: 9.6ms | ActiveRecord: 104.6ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-09-11 13:21:01 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (52.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 64.7ms (Views: 11.3ms | ActiveRecord: 52.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-09-11 13:21:18 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2b6vhgChFKYztR/rx+j/PX1MULo5/utIkTPkDGCkCjE="}
+  [1m[36mUser Load (52.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (51.6ms)[0m  BEGIN
+  [1m[36m (51.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 212.4ms (ActiveRecord: 155.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 13:21:19 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0.3ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-09-11 13:21:19 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 78.8ms (Views: 78.2ms | ActiveRecord: 0.0ms)
