@@ -33658,3 +33658,105 @@ Started GET "/users/sign_in" for 127.0.0.1 at 2014-09-11 13:21:19 -0500
 Processing by Devise::SessionsController#new as HTML
   Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
 Completed 200 OK in 78.8ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 14:29:42 -0500
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 177.1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-09-11 14:29:45 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+Compiled bootstrap_and_overrides.css  (959ms)  (pid 11289)
+Warning. Error encountered while saving cache /Users/aldizhupani/Dropbox/workspace/ruby_projects/oplink/tmp/cache/sass/e746b0b5261f7bcc8c88b00c95eb7f059b023fef/customers.css.scssc: can't dump anonymous class #<Class:0x007f9d95b30a08>
+
+Compiled customers.css  (35ms)  (pid 11289)
+Warning. Error encountered while saving cache /Users/aldizhupani/Dropbox/workspace/ruby_projects/oplink/tmp/cache/sass/e746b0b5261f7bcc8c88b00c95eb7f059b023fef/home.css.scssc: can't dump anonymous class #<Class:0x007f9d95b30a08>
+
+Compiled home.css  (9ms)  (pid 11289)
+Compiled nivo-slider.css  (0ms)  (pid 11289)
+Warning. Error encountered while saving cache /Users/aldizhupani/Dropbox/workspace/ruby_projects/oplink/tmp/cache/sass/e746b0b5261f7bcc8c88b00c95eb7f059b023fef/opus.css.scssc: can't dump anonymous class #<Class:0x007f9d95b30a08>
+
+Compiled opus.css  (1ms)  (pid 11289)
+Warning. Error encountered while saving cache /Users/aldizhupani/Dropbox/workspace/ruby_projects/oplink/tmp/cache/sass/e746b0b5261f7bcc8c88b00c95eb7f059b023fef/payments.css.scssc: can't dump anonymous class #<Class:0x007f9d95b30a08>
+
+Compiled payments.css  (1ms)  (pid 11289)
+Compiled application.css  (1347ms)  (pid 11289)
+Compiled jquery.js  (5ms)  (pid 11289)
+Compiled jquery_ujs.js  (0ms)  (pid 11289)
+Compiled bootstrap.js  (128ms)  (pid 11289)
+Compiled customers.js  (1ms)  (pid 11289)
+Compiled home.js  (0ms)  (pid 11289)
+Compiled jquery-1.9.0.min.js  (1ms)  (pid 11289)
+Compiled jquery.nivo.slider.js  (0ms)  (pid 11289)
+Compiled jquery.nivo.slider.pack.js  (0ms)  (pid 11289)
+Compiled opus.js  (0ms)  (pid 11289)
+Compiled payments.js  (0ms)  (pid 11289)
+Compiled application.js  (1161ms)  (pid 11289)
+Completed 200 OK in 3343.4ms (Views: 2978.1ms | ActiveRecord: 260.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /bootstrap_and_overrides.css - 200 OK (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /customers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/opus.css?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /opus.css - 200 OK (2ms)
+
+
+Started GET "/assets/nivo-slider.css?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /nivo-slider.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /customers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /payments.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-1.9.0.min.js?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /jquery-1.9.0.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.nivo.slider.js?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /jquery.nivo.slider.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/opus.js?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /opus.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2014-09-11 14:29:49 -0500
+Served asset /payments.js - 304 Not Modified (1ms)
