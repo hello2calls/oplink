@@ -1,33 +1,23 @@
 source 'https://rubygems.org'
 
-gem 'rails'
+ruby '2.1.5'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-gem 'rufus-scheduler', '2.0.7'
-group :development do
-	gem 'mysql2'
-end
-group :production do 
-	gem 'pg'
-end
-group :test do
-	gem 'sqlite3'
-end
+gem 'rails', '4.2.3'
+
 gem 'devise'
 gem 'cancan'
-#for working with soap api
-gem 'savon', '=1.2.0'
+gem 'rufus-scheduler', '2.0.7'
+gem 'mysql2', '~> 0.3.18'
+gem 'savon', '=1.2.0'  # For working with soap api
 # Gems used only for assets and not required
 # in production environments by default.
 gem "therubyracer"
 gem 'less-rails'
 gem "twitter-bootstrap-rails"
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
-
+	gem 'sass-rails'
+	gem 'coffee-rails'
+	gem 'uglifier'
 end
 
 gem 'jquery-rails'

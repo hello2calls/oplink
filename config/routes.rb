@@ -1,8 +1,8 @@
 OplinkManagement::Application.routes.draw do
-  get "csnCustomers/addOpu"
-  get "csnCustomers/addPayment" 
-  get "csnCustomers/addCustomer" 
-  get "csnCustomers/getCustomer"
+  get "csn_customers/addOpu"
+  get "csn_customers/addPayment" 
+  get "csn_customers/addCustomer" 
+  get "csn_customers/getCustomer"
   resources :opus
 
   post "payments/index"

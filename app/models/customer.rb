@@ -3,5 +3,5 @@ class Customer < ActiveRecord::Base
   validates_uniqueness_of :email
   has_many :payments, through: :opus, :dependent => :destroy
   has_many :opus, :dependent => :destroy
-  attr_accessible :activation_date, :address, :balance, :city, :country, :email, :expiration_date, :status, :first, :last, :phone
+  attr_accessor :activation_date, :address, :balance, :city, :country, :email, :expiration_date, :status, :first, :last, :phone
 end
